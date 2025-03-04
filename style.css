@@ -2,17 +2,18 @@
 html,body {padding:0;margin:0;height:100%}
 body {font-family:'Plus Jakarta Sans', 'Open Sans', sans-serif;background-color:#000}
 .header{position:fixed;top:0;left:0;right:0;z-index:5;-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);background:rgba(0, 0, 0, 0.15)}
+.logo{width:180px;display:block;border:0}
 .dmenu{width:100%;max-width:500px}
 .menubox{background:#6260603d;text-align:center;padding:14px;border-radius:8px;display:flex;justify-content:center;gap:20px}
 .menubox a{color:#fff;text-decoration:none;font-size:15px;border-bottom:2px solid transparent}
-.menubox a:hover{color:#FF9900;border-bottom:2px solid #FF9900;transition:all 0.5s}
+.menubox a:hover{color:#d0970f;border-bottom:2px solid #d0970f;transition:all 0.5s}
 .hero {margin-top:60px;border-bottom:2px solid #252525;padding:0 30px;position:relative;scroll-margin-top:70px}
-.hero:after {content: '';position: absolute;bottom: 0;left: 0;right: 0;top: 0;background-image: url(images/lines.png);background-size: cover;opacity: 0.1;z-index: -1;}
+.hero:after {content: '';position: absolute;bottom: 0;left: 0;right: 0;top: 0;background-image: url(assets/lines.png);background-size: cover;opacity: 0.1;z-index: -1;}
 .icons1{text-align:right;display:flex;gap:14px}
 .icons1 img{height:16px;border:0;display:block}
-.link{color:#FF9900}
+.link{color:#d0970f}
 .content {color:#fff;margin: 0 auto;padding:30px;max-width: 1300px;}
-.content.top{display:flex;align-items:center;justify-content:space-between;padding:0 30px;height:70px}
+.content.top{display:flex;align-items:center;justify-content:space-between;padding:0 30px;height:80px}
 .sides{display:flex;flex-direction:row;align-items:flex-start;}
 .side1{width:50%}
 .side2{width:50%}
@@ -31,7 +32,7 @@ body {font-family:'Plus Jakarta Sans', 'Open Sans', sans-serif;background-color:
 .box3 a{text-decoration:none;color:#d4d4d4;font-size:18px;line-height:1.7}
 .box3 a:hover{color:#fff;transition: all 0.5s;text-decoration:underline;}
 .box3 .readmore{text-decoration:none;border-bottom:1px solid #fff;color:#fff;font-size:15px;line-height:1.5;margin-top:20px;margin-bottom:10px;display:inline-block;}
-.box3 .readmore:hover{text-decoration:none;color:#fff;border-bottom:1px solid #FF9900}
+.box3 .readmore:hover{text-decoration:none;color:#fff;border-bottom:1px solid #d0970f}
 
 .item {padding:24px;background-color: #0c0c0c;position: relative;border: 1px solid #c0c0c01f;border-radius: 11px;}
 .item:before {background: -webkit-linear-gradient(330deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.04));background: -o-linear-gradient(330deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.04));background: linear-gradient(120deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.04));opacity: 0.3;}
@@ -47,21 +48,21 @@ body {font-family:'Plus Jakarta Sans', 'Open Sans', sans-serif;background-color:
 .title1, .title2{display:inline-block;color:#d9d9d9;font-size:16px;text-transform:uppercase;font-weight:300;padding:10px 20px;border:1px solid #363636;border-radius: 30px;}
 .title2{padding:8px 15px;background:#000}
 .subtitle{padding-top:20px;padding-bottom:20px;color:#fff;opacity:0.8;font-size:38px;font-weight:200;}
-.subtitle span{color:#FF9900}
+.subtitle span{color:#d0970f}
 .bx2{display:flex;padding:36px}
 .bx2 p{margin:0;padding-left:30px;line-height:2;font-size:16px;opacity:0.8;}
-.bx2 .boxhead{font-size:45px;font-weight:400;color:#FF9900;padding-bottom:25px;}
+.bx2 .boxhead{font-size:45px;font-weight:400;color:#d0970f;padding-bottom:25px;}
 .milestone{position:relative;padding-left:50px;padding-bottom:40px}
 .milestone.last{padding-bottom:0}
-.milestone:before {content: '';position: absolute;left: -5px;top: 10px;width: 10px;height: 10px;border-radius: 50%;background: #FF9900;z-index: 2;}
+.milestone:before {content: '';position: absolute;left: -5px;top: 10px;width: 10px;height: 10px;border-radius: 50%;background: #d0970f;z-index: 2;}
 .milestone h2{margin:12px 0px;opacity:0.8;font-weight:500}
 .milestone p{font-size:16px;opacity:0.8;line-height:1.75;font-weight:300;color:#ddd}
-.milestone .submile{text-transform:uppercase; letter-spacing: 1px; font-size: 13px;color:#ff9902;}
+.milestone .submile{text-transform:uppercase; letter-spacing: 1px; font-size: 13px;color:#d0970f;}
 .dhero{background:transparent;color:#fff;display:flex;align-items:center;padding:150px 30px;justify-content:center;}
 .hero1{font-family:'Plus Jakarta Sans';text-align:center;}
 .hero2{width:50%;text-align:right;}
 .hero1t1{font-size:72px;font-weight:700}
-.hero1t2{font-size:72px;color:#FF9900;font-weight:700}
+.hero1t2{font-size:72px;color:#d0970f;font-weight:700}
 .hero1t3{margin-top:20px;margin-bottom:50px;font-weight:100;line-height:1.5;font-size:18px}
 .socialicons{padding-top:40px;display:flex;justify-content:center;gap:60px}
 .socialicons img{border:0;height:60px;opacity:0.5}
@@ -82,7 +83,7 @@ body {font-family:'Plus Jakarta Sans', 'Open Sans', sans-serif;background-color:
 .details__container[open] .details__title:before{rotate:45deg}
 .details__container[open] .details__title:after{rotate:135deg}
 .details__container[open] .details__title{background-color:#202020;border-radius:3px 3px 0 0}
-.details__summary::marker{content:''}
+.details__summary::marker{content:'';display:none}
 .details__desc{visibility:hidden;display:grid;grid-template-rows:0fr;transition:all .2s ease-in-out;overflow:hidden;padding-inline:20px}
 .details__container[open] + .details__desc{visibility: visible;grid-template-rows:1fr;padding:20px;background:#000;border-radius:0 0 3px 3px}
 .details__desc-inner{min-height:0;line-height:1.7;opacity:0.7}
@@ -100,6 +101,7 @@ body {font-family:'Plus Jakarta Sans', 'Open Sans', sans-serif;background-color:
 
 @media screen and (max-width:900px) {
 .header {background: rgb(0 0 0 / 91%);}
+.logo{width:150px}
 .content{padding:20px;}
 .content.top{padding:0 20px;height:60px}
 .hero{padding:0 20px}

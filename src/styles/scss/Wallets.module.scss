@@ -1,0 +1,130 @@
+.walletsSection {
+  background: #000;
+  padding: 60px 0;
+  scroll-margin-top: 70px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cardWrapper {
+  width: calc(50% - 25px);
+  border-radius: 11px;
+  position: relative;
+  background-color: #0c0c0c;
+}
+
+.card {
+  padding: 36px;
+  border-radius: 11px;
+  background-color: #0c0c0c;
+  border: 1px solid #2b2b2b;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.cardTitle {
+  font-size: 45px;
+  font-weight: 400;
+  color: #d0970f;
+}
+
+.cardButton {
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.7s ease;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.cardDescription {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 300;
+  color: #ccc;
+  margin: 0;
+  flex: 1;
+}
+
+// Responsive
+@media screen and (max-width: 900px) {
+  .cardWrapper {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .cardHeader {
+    align-items: flex-start;
+    min-width: auto;
+  }
+
+  .cardButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}

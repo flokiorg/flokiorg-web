@@ -1,0 +1,28 @@
+.languageSwitcher {
+  position: relative;
+  display: inline-block;
+
+  .selectWithLabel {
+    font-weight: bold;
+    padding: 3px 4px;
+    background-color: #f4f4f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: none;
+  }
+
+  // Optionnel : Indicateurs pour un meilleur visuel
+  .selectWithLabel:focus {
+    border-color: #888;
+  }
+
+  .selectWithLabel::-ms-expand {
+    display: none; // Supprime l'icône par défaut d'IE/Edge
+  }
+}

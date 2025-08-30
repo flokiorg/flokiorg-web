@@ -1,0 +1,83 @@
+.hero {
+  border-bottom: 2px solid #252525;
+  padding: 0 30px;
+  position: relative;
+  scroll-margin-top: 70px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url('/img/lines.png');
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 30px;
+  background: transparent;
+  color: #fff;
+}
+
+.title {
+  font-family: 'Plus Jakarta Sans', 'Open Sans', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.typingContainer {
+  font-size: 72px;
+  color: #d0970f;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  margin-left: 2px;
+}
+
+.subtitle {
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+// Responsive styles
+@media screen and (max-width: 1122px) {
+  .title,
+  .typingContainer {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    padding: 0 20px;
+  }
+
+  .heroContent {
+    padding: 90px 0 50px 0;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .typingContainer {
+    font-size: 40px;
+  }
+}

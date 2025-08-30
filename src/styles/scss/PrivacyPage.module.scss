@@ -1,0 +1,74 @@
+.main {
+  background: #000;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.containerBoxed {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 200;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.sectionList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section {
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 30px;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sectionSubtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #d0970f;
+}
+
+.sectionDescription {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #ccc;
+  font-weight: 300;
+  white-space: pre-line;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .containerBoxed {
+    padding: 0 16px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+
+  .sectionSubtitle {
+    font-size: 16px;
+  }
+
+  .sectionDescription {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "header": {
+    "menu": [
+      { "label": "About", "link": "#about" },
+      { "label": "Milestones", "link": "#milestones" },
+      { "label": "Wallet", "link": "#wallets" },
+      { "label": "Explorer", "link": "https://flokichain.info" },
+      { "label": "Topics", "link": "#topics" },
+      { "label": "FAQ", "link": "#faq" },
+      { "label": "Community", "link": "#contact" }
+    ],
+    "socials": [
+      {
+        "name": "X",
+        "icon": "/img/x.png",
+        "link": "https://x.com/flokicoin_dao"
+      },
+      {
+        "name": "Discord",
+        "icon": "/img/discord.png",
+        "link": "https://flokicoin.org/discord",
+        "width": 21
+      },
+      {
+        "name": "Github",
+        "icon": "/img/github.png",
+        "link": "https://github.com/flokiorg"
+      }
+    ],
+    "langs": [
+      { "label": "English", "value": "en" },
+      { "label": "Chinese", "value": "cn" },
+      { "label": "Russian", "value": "ru" }
+    ]
+  },
+  "slider": {
+    "title": "Flokicoin is",
+    "carousel": [
+      "Ownership",
+      "Zero-Knowledge Proof",
+      "Permissionless",
+      "Mineable",
+      "Trustless",
+      "Peer-to-Peer",
+      "Open-Source",
+      "Money",
+      "Decentralized",
+      "Secure",
+      "Global",
+      "Fast",
+      "Fair",
+      "Community-Driven",
+      "Self-Custody",
+      "Transparent",
+      "Unstoppable"
+    ],
+    "subtitle": "A Layer-1 chain powered by Scrypt Family, Fueling Fun every block."
+  },
+  "donation": {
+    "sectionLabel": "Donation",
+    "title": "Support",
+    "titleHighlight": "Us",
+    "remainingTitle": "in Crypto",
+    "description": "Support our mission with crypto donations — every contribution fuels growth and innovation."
+  },
+  "about": {
+    "subtitle": "Key stats and highlights",
+    "cards": [
+      {
+        "image": "/img/ico01.png",
+        "subtitle": "Solid Foundation for Innovation",
+        "title": "Layer 1",
+        "description": "Flokicoin runs on its own blockchain, powering secure, scalable, and decentralized applications."
+      },
+      {
+        "image": "/img/ico02.png",
+        "subtitle": "Merged Mining",
+        "title": "Scrypt family",
+        "description": "By joining the scrypt family, Flokicoin ensures fast, energy-efficient mining while maintaining strong network security."
+      },
+      {
+        "image": "/img/ico03.png",
+        "subtitle": "Community-driven",
+        "title": "xFun",
+        "description": "Flokicoin evolves through FEPs (Fun Enhancement Possibilities), inspiring innovation and fun."
+      }
+    ]
+  },
+  "roadmap": {
+    "sectionLabel": "Milestones",
+    "subtitle": "Community",
+    "subtitleHighlight": "Milestone",
+    "remainingSubtitle": "Achievements and Backlog.",
+    "intro": "Each milestone reflects the strength of collaboration, shaped through our communication channels and refined via FEPs (Fun Enhancement Possibilities) and FIPs (Flokicoin Improvement Proposals).",
+    "milestones": [
+      {
+        "title": "Genesis",
+        "label": "[ Floki has arrived ]"
+      },
+      {
+        "title": "Flokicoin revived",
+        "label": "[ Floki is back ]",
+        "description": "Chain revived from block 19,721."
+      },
+      {
+        "title": "Taproot Activation",
+        "label": "[ Low fees, high Privacy ]",
+        "description": "Taproot activated, improving transaction efficiency, scalability, and privacy."
+      },
+      {
+        "title": "Scrypt Family",
+        "label": "[ Strong Network Security ]",
+        "description": "Flokicoin will join the Scrypt family at block 115,840."
+      },
+      {
+        "title": "Lightning Network",
+        "label": "[ fast, low-cost ]",
+        "description": "Enabling instant payments and microtransactions across the ecosystem."
+      },
+      {
+        "title": "Tokenization",
+        "label": "[ Taproot-Assets, Runes, Ordinals ]",
+        "description": "Unlocking fungible and non-fungible assets."
+      },
+      {
+        "title": "Off-Chain Computation",
+        "label": "[ OP_CAT, ZKP, Loki-lang ]",
+        "description": "Enabling on-chain verification of zero-knowledge proofs."
+      }
+    ]
+  },
+  "wallets": {
+    "cards": [
+      {
+        "title": "tWallet",
+        "button": "DOWNLOAD",
+        "description": "Store, send, and receive your digital assets with our simple, secure, and user-friendly wallet, designed for simplicity and peace of mind.",
+        "link": "https://github.com/flokiorg/twallet/releases"
+      },
+      {
+        "title": "Explorer",
+        "button": "EXPLORE",
+        "description": "Track blocks and transactions, check wallet balances, stay updated on mining metrics and network activity in real-time, and more.",
+        "link": "https://flokichain.info"
+      }
+    ]
+  },
+  "faq": {
+    "sectionTag": "Faq",
+    "title": "Your Questions, Answered",
+    "questions": [
+      {
+        "question": "What is Flokicoin?",
+        "answer": "Flokicoin is a Layer 1 blockchain that was initially launched in 2021 following Elon Musk's tweet (\"<a href='https://x.com/elonmusk/status/1437179881260032016' target='_blank' rel='noopener noreferrer'>Floki has arrived</a>\")."
+      },
+      {
+        "question": "Who founded Flokicoin?",
+        "answer": "Flokicoin was originally launched by an anonymous developer, who abandoned the project shortly after its initial release at block 19,721."
+      },
+      {
+        "question": "When did Flokicoin's revival take place?",
+        "answer": "Flokicoin was revived in 2024 at block 19,721. Instead of starting from zero, we continued from the original 2021 chain, maintaining the history integrity."
+      },
+      {
+        "question": "What are Flokicoin's key features?",
+        "answer": "• 1-minute block time<br/>• Auxiliary mining support<br/>• Halving every 210,000 blocks<br/>• Initial block reward is 1000 $FLC per block, halving until it stabilizes at 21 $FLC<br/>• No transaction tax<br/>• DAO governance"
+      },
+      {
+        "question": "Is Flokicoin environmentally friendly since it uses Proof of Work (PoW) mining?",
+        "answer": "While PoW mining requires energy, Flokicoin optimizes energy use by leveraging auxiliary mining. This allows participants to mine Flokicoin alongside other chains, optimizing resource usage."
+      },
+      {
+        "question": "What is $LOKI?",
+        "answer": "$LOKI is the smallest unit of a Flokicoin ($FLC)<br/><br/>1 $FLC = 100,000,000 $LOKI"
+      },
+      {
+        "question": "How can I join the Flokicoin community?",
+        "answer": "You can join the Flokicoin community through our social media channels and chat groups. Get involved in governance decisions, participate in development discussions, and help define the fun through FEPs (Fun Enhancement Possibilities)."
+      },
+      {
+        "question": "How can I contribute to Flokicoin as a developer?",
+        "answer": "As a developer, you can contribute to Flokicoin by accessing the open-source code on our Git repositories. You can submit improvements, review code, and share ideas through FIPs (Flokicoin Improvement Proposals) or community discussions."
+      }
+    ]
+  },
+  "topics": {
+    "sectionTag": "Topics",
+    "title": "Insights, Tips, and Updates",
+    "cards": [
+      {
+        "title": "Guide to Mining Flokicoin (FLC)",
+        "image": "/img/mine.jpg",
+        "link": "https://github.com/flokiorg/grpc-miner/wiki"
+      },
+      {
+        "title": "How to setup your Flokicoin wallet",
+        "image": "/img/secure.jpg",
+        "link": "https://github.com/flokiorg/tWallet/wiki"
+      },
+      {
+        "title": "Flokicoin's economy and inflation rate",
+        "image": "/img/economy.jpg",
+        "link": "https://github.com/flokiorg/go-flokicoin/wiki"
+      }
+    ]
+  },
+  "contact": {
+    "sectionTag": "Connect with the community",
+    "title1": "Join the",
+    "title2": "Fun",
+    "title3": "Shape the",
+    "title4": "Future",
+    "socials": [
+      {
+        "name": "X",
+        "icon": "/img/x.png",
+        "link": "https://x.com/flokicoin_dao"
+      },
+      {
+        "name": "Discord",
+        "icon": "/img/discord.png",
+        "link": "https://flokicoin.org/discord"
+      },
+      {
+        "name": "GitHub",
+        "icon": "/img/github.png",
+        "link": "https://github.com/flokiorg"
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "subtitle": "By accessing or using our platform, you agree to these terms.",
+        "description": "Your use of our services constitutes acceptance of these Terms of Use. If you do not agree, do not use the platform."
+      },
+      {
+        "title": "2. Eligibility",
+        "subtitle": "You must meet the legal requirements.",
+        "description": "You must be at least 18 years old and legally capable of entering into agreements to use this platform. You are solely responsible for compliance with local laws."
+      },
+      {
+        "title": "3. Wallet Responsibility",
+        "subtitle": "You are responsible for securing your wallet.",
+        "description": "We do not hold or manage private keys. You are solely responsible for your wallet credentials. Lost access to your wallet cannot be recovered by us."
+      },
+      {
+        "title": "4. Prohibited Uses",
+        "subtitle": "Illegal activity is strictly forbidden.",
+        "description": "You may not use the platform for any unlawful, fraudulent, or harmful activities, including money laundering, terrorism financing, or violating any local or international laws."
+      },
+      {
+        "title": "5. No Warranties",
+        "subtitle": "Use the platform at your own risk.",
+        "description": "The platform is provided 'as is' with no guarantees of availability, accuracy, or security. We disclaim all warranties to the maximum extent permitted by law."
+      },
+      {
+        "title": "6. Limitation of Liability",
+        "subtitle": "We are not liable for any losses.",
+        "description": "We are not liable for direct, indirect, or consequential damages arising from the use of our platform, including loss of tokens, data, or access."
+      },
+      {
+        "title": "7. Modifications to Terms",
+        "subtitle": "We may update these terms.",
+        "description": "We reserve the right to modify these Terms of Use at any time. Updates will be posted on the site, and continued use implies acceptance of the revised terms."
+      },
+      {
+        "title": "8. Governing Law",
+        "subtitle": "Legal jurisdiction",
+        "description": "These terms are governed by and construed in accordance with the laws of the jurisdiction in which our organization operates, unless stated otherwise."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "sections": [
+      {
+        "title": "1. Information Collection",
+        "subtitle": "What we collect and why",
+        "description": "We collect minimal data such as IP addresses, browser types, and site usage analytics to maintain and improve platform performance."
+      },
+      {
+        "title": "2. On-chain Data",
+        "subtitle": "Blockchain transparency",
+        "description": "Blockchain data, including wallet addresses and transactions, is publicly available and outside our control. We do not collect or manage on-chain data."
+      },
+      {
+        "title": "3. Cookies & Analytics",
+        "subtitle": "How we use cookies",
+        "description": "We use cookies and third-party analytics tools like Google Analytics to understand how users interact with the site. You may disable cookies in your browser settings."
+      },
+      {
+        "title": "4. Third-party Services",
+        "subtitle": "External tools and integrations",
+        "description": "We may use third-party services for communication, hosting, or analytics. These services may collect information as governed by their own privacy policies."
+      },
+      {
+        "title": "5. User Rights",
+        "subtitle": "Access and control",
+        "description": "You may request access to or deletion of your off-chain personal data. On-chain data cannot be altered or deleted due to its immutable nature."
+      },
+      {
+        "title": "6. Data Security",
+        "subtitle": "Protecting your information",
+        "description": "We take reasonable technical measures to secure the data we collect, but no system can guarantee complete security."
+      },
+      {
+        "title": "7. Policy Updates",
+        "subtitle": "Changes to this policy",
+        "description": "We may revise this Privacy Policy from time to time. Changes will be posted on this page, and your continued use of the platform implies acceptance."
+      }
+    ]
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "<img src=\"/logo.svg\" alt=\"Flokicoin\" style=\"width: 70%; height: auto;\">",
+        "links": [
+          {
+            "icon": "/img/x.png",
+            "label": "X",
+            "link": "https://x.com/flokicoin_dao"
+          },
+          {
+            "icon": "/img/discord.png",
+            "label": "Discord",
+            "link": "https://flokicoin.org/discord"
+          },
+          {
+            "icon": "/img/github.png",
+            "label": "GitHub",
+            "link": "https://github.com/flokiorg"
+          }
+        ]
+      },
+      {
+        "title": "Privacy & Terms",
+        "links": [
+          { "label": "Terms of Use", "link": "/terms" },
+          { "label": "Privacy Policy", "link": "/privacy" },
+          { "label": "Contact Us", "link": "mailto:contact@flokicoin.org" }
+        ]
+      },
+      {
+        "title": "Learn",
+        "links": [
+          {
+            "label": "What is Flokicoin?",
+            "link": "https://github.com/flokiorg/go-flokicoin/wiki"
+          },
+          {
+            "label": "How to mine?",
+            "link": "https://github.com/flokiorg/grpc-miner/wiki"
+          },
+          {
+            "label": "Wallet Guide",
+            "link": "https://github.com/flokiorg/tWallet/wiki"
+          }
+        ]
+      },
+      {
+        "title": "Use",
+        "links": [
+          {
+            "label": "Run a node",
+            "link": "https://github.com/myfloki/fullnode"
+          },
+          {
+            "label": "Run an operator",
+            "link": "https://github.com/myfloki/operator"
+          },
+          {
+            "label": "API Reference",
+            "link": "https://flokichain.info/docs/api/rest"
+          }
+        ]
+      },
+      {
+        "title": "Community Products",
+        "links": [
+          { "label": "Flokicoin Explorer", "link": "https://flokichain.info" },
+          { "label": "myFloki – Toolchain", "link": "https://myfloki.com" },
+          { "label": "Fpool – Mining Pool", "link": "https://fpool.net" }
+        ]
+      }
+    ]
+  }
+}

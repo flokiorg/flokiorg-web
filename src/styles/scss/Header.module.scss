@@ -1,0 +1,72 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  height: 60px;
+
+  @media (min-width: 900px) {
+    padding: 15px 30px;
+    height: 80px;
+  }
+}
+
+.logoContainer {
+  display: flex;
+}
+
+.navigation {
+  display: none;
+
+  @media (min-width: 900px) {
+    display: flex;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 12px;
+    padding: 15px 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    color: #d0970f;
+    border-bottom: 2px solid #d0970f;
+  }
+}
+
+.rightSideContent {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 14px;
+
+  img {
+    height: 16px;
+    display: block;
+    border: 0;
+  }
+}

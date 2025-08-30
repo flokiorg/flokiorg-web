@@ -1,4 +1,4 @@
-.roadmapSection {
+.donationSection {
   background-color: #131313;
   padding: 60px 0;
   scroll-margin-top: 70px;
@@ -55,15 +55,51 @@
   color: #fff;
 }
 
+.sectionButton {
+  margin-top: 20px;
+  text-align: center;
+  display: inline-flex; /* use inline-flex for proper alignment */
+  align-items: center; /* vertically center items */
+  justify-content: center; /* center content horizontally, if necessary */
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.7s ease;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+}
+
 .rightColumn {
   flex: 1 1 50%;
   position: relative;
 }
 
-.widgetWrapper {
-  padding-top: 50px;
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  padding-left: 15%;
+}
+
+.image {
+  width: auto;
+  height: 500px;
+  border-radius: 11px;
+  border: 1px solid rgba(192, 192, 192, 0.1215686275);
 }
 
 // Responsive

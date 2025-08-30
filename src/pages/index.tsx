@@ -1,4 +1,4 @@
-import styles from "@styles/scss/Home.module.scss";
+import styles from "@styles/scss/HomePage.module.scss";
 import dynamic from "next/dynamic";
 
 const Home = () => {

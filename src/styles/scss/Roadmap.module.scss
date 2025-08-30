@@ -1,0 +1,179 @@
+.roadmapSection {
+  background-color: #131313;
+  padding: 60px 0;
+  scroll-margin-top: 70px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.leftColumn {
+  flex: 1 1 50%;
+  padding-right: 30px;
+  position: sticky;
+  top: 120px;
+  align-self: flex-start;
+}
+
+.headerBox {
+  max-width: 520px;
+}
+
+.label {
+  display: inline-block;
+  color: #d9d9d9;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 10px 20px;
+  border: 1px solid #363636;
+  border-radius: 30px;
+}
+
+.subtitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 200;
+  opacity: 0.8;
+
+  span {
+    color: #d0970f;
+  }
+}
+
+.description {
+  opacity: 0.8;
+  max-width: 520px;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.rightColumn {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.timelineWrapper {
+  position: relative;
+  padding-left: 50px;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 69px;
+  width: 2px;
+  background: #2c2c2c;
+}
+
+.timelineItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.milestoneItem {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.milestoneDot {
+  width: 12px;
+  height: 12px;
+  background-color: #d0970f;
+  border-radius: 50%;
+  position: absolute;
+  left: 14px;
+  top: 20px;
+  z-index: 2;
+}
+
+.milestoneContent {
+  padding-left: 40px;
+  color: #fff;
+
+  h2 {
+    margin: 12px 0px;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+
+  .milestoneLabel {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: #d0970f;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 16px;
+    opacity: 0.8;
+    line-height: 1.75;
+    font-weight: 300;
+    color: #ddd;
+  }
+}
+
+.lastItem {
+  padding-bottom: 0;
+}
+
+// Responsive
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+
+  .headerBox {
+    text-align: center;
+  }
+
+  .label {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .leftColumn {
+    position: static;
+    top: unset;
+    margin-bottom: 40px;
+  }
+
+  .timelineWrapper {
+    padding-left: 0px;
+  }
+
+  .timelineLine {
+    left: 5px;
+  }
+
+  .milestoneDot {
+    left: 0px;
+  }
+
+  .milestoneContent {
+    padding-left: 35px;
+  }
+
+  .subtitle {
+    font-size: 28px;
+    text-align: center;
+  }
+}

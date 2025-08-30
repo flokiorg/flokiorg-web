@@ -1,0 +1,116 @@
+.roadmapSection {
+  background-color: #131313;
+  padding: 60px 0;
+  scroll-margin-top: 70px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.leftColumn {
+  flex: 1 1 50%;
+  padding-right: 30px;
+  position: sticky;
+  top: 120px;
+  align-self: flex-start;
+}
+
+.headerBox {
+  max-width: 520px;
+}
+
+.label {
+  display: inline-block;
+  color: #d9d9d9;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 10px 20px;
+  border: 1px solid #363636;
+  border-radius: 30px;
+}
+
+.title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 200;
+  opacity: 0.8;
+
+  span {
+    color: #d0970f;
+  }
+}
+
+.description {
+  opacity: 0.8;
+  max-width: 520px;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.rightColumn {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.widgetWrapper {
+  padding-top: 50px;
+  position: relative;
+  padding-left: 15%;
+}
+
+// Responsive
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+
+  .headerBox {
+    text-align: center;
+  }
+
+  .label {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .leftColumn {
+    position: static;
+    top: unset;
+    margin-bottom: 40px;
+  }
+
+  .widgetWrapper {
+    padding-left: 0px;
+  }
+
+  .timelineLine {
+    left: 5px;
+  }
+
+  .milestoneDot {
+    left: 0px;
+  }
+
+  .milestoneContent {
+    padding-left: 35px;
+  }
+
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+}

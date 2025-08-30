@@ -1,4 +1,4 @@
-import styles from "@styles/scss/Privacy.module.scss";
+import styles from "@styles/scss/PrivacyPage.module.scss";
 import { useTranslation } from "react-i18next";
 
 const Privacy = () => {

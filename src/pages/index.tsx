@@ -17,8 +17,8 @@ const Home = () => {
     <main className={styles.main}>
       <div className={styles.containerBoxed}>
         <Slider />
-        <Donation />
         <About />
+        <Donation />
         <Roadmap />
         <Wallets />
         <Faq />

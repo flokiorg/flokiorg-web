@@ -1,45 +1,65 @@
 import React from "react";
 import styles from "@styles/scss/Donations.module.scss";
 import { useTranslation } from "react-i18next";
-import { DONATION_APIKEY } from "@constants/config";
+import { DONATION_URL } from "@constants/config";
 
 const Donation = () => {
   const { t } = useTranslation();
-  const widgetUrl = `https://nowpayments.io/embeds/donation-widget?api_key=${DONATION_APIKEY}`;
 
-  // Style objet, typé correctement
-  const iframeStyle: React.CSSProperties = {
-    overflowY: "hidden",
-    borderRadius: 11,
-    border: "2px solid #d0970f", // gold
-    boxShadow: "0 10px 30px rgba(0,0,0,.45)",
-  };
+  const descriptions: string[] =
+    (t("donation.descriptions", { returnObjects: true }) as any) || [];
+  const descriptionList: string[] =
+    (t("donation.descriptionList", { returnObjects: true }) as any) || [];
 
   return (
     <section className={styles.donationSection} id="donation">
       <div className={styles.container}>
         <div className={styles.leftColumn}>
           <div className={styles.headerBox}>
-            <div className={styles.label}>{t("donation.sectionLabel")}</div>
-            <div className={styles.title}>
-              {t("donation.title")} <span>{t("donation.titleHighlight")}</span>{" "}
-              {t("donation.remainingTitle")}
+            <div id="donationLabel" className={styles.label}>
+              {t("donation.sectionLabel")}
             </div>
+            <div className={styles.title}>
+              <span className={styles.icon}>💜</span>
+              {t("donation.title")} <span>{t("donation.titleHighlight")}</span>
+            </div>
+            <div className={styles.subtitle}>{t("donation.subtitle")}</div>
           </div>
-          <p className={styles.description}>{t("donation.description")}</p>
+
+          <div className={styles.descriptions}>
+            {descriptions.map((html, idx) => (
+              <p
+                key={idx}
+                className={styles.description}
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            ))}
+          </div>
+
+          {descriptionList.length > 0 && (
+            <ul className={styles.descriptionList}>
+              {descriptionList.map((item, idx) => (
+                <li key={idx}>
+                  <strong>{"> "}</strong> {item}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <a
+            href={DONATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.sectionButton}
+          >
+            <span className={styles.icon}>💜</span>
+            {t("donation.buttonLabel")}
+          </a>
         </div>
 
         <div className={styles.rightColumn}>
-          <div className={styles.widgetWrapper}>
-            <iframe
-              title="Crypto Donation Widget"
-              src={widgetUrl}
-              width={346}
-              height={570}
-              frameBorder={0}
-              scrolling="no"
-              style={iframeStyle}
-            />
+          <div className={styles.imageWrapper}>
+            <img src="/img/wof.png" className={styles.image} alt="Web of Fun" />
           </div>
         </div>
       </div>

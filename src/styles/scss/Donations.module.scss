@@ -1,152 +1,182 @@
+// Donations.module.scss
+
+$bg: #1d1d1d;
+$text: #fff;
+$muted: #d9d9d9;
+$accent: #d0970f;
+$border: #363636;
+$btn-bg: rgba(182, 64, 245, 0.15);
+$btn-border: #b744f6db;
+
 .donationSection {
-  background-color: #131313;
+  background-color: $bg;
   padding: 60px 0;
   scroll-margin-top: 70px;
-}
+  color: $text;
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.leftColumn {
-  flex: 1 1 50%;
-  padding-right: 30px;
-  position: sticky;
-  top: 120px;
-  align-self: flex-start;
-}
-
-.headerBox {
-  max-width: 520px;
-}
-
-.label {
-  display: inline-block;
-  color: #d9d9d9;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 300;
-  padding: 10px 20px;
-  border: 1px solid #363636;
-  border-radius: 30px;
-}
-
-.title {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  font-size: 38px;
-  font-weight: 200;
-  opacity: 0.8;
-
-  span {
-    color: #d0970f;
-  }
-}
-
-.description {
-  opacity: 0.8;
-  max-width: 520px;
-  line-height: 1.8;
-  color: #fff;
-}
-
-.sectionButton {
-  margin-top: 20px;
-  text-align: center;
-  display: inline-flex; /* use inline-flex for proper alignment */
-  align-items: center; /* vertically center items */
-  justify-content: center; /* center content horizontally, if necessary */
-  text-decoration: none;
-  color: #fff;
-  background: transparent;
-  border: 1px solid #fff;
-  border-radius: 30px;
-  padding: 12px 25px;
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.7s ease;
-
-  &:hover {
-    background: #fff;
-    color: #000;
-  }
-
-  .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-  }
-}
-
-.rightColumn {
-  flex: 1 1 50%;
-  position: relative;
-}
-
-.imageWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.image {
-  width: auto;
-  height: 500px;
-  border-radius: 11px;
-  border: 1px solid rgba(192, 192, 192, 0.1215686275);
-}
-
-// Responsive
-@media screen and (max-width: 900px) {
   .container {
-    flex-direction: column;
-  }
-
-  .leftColumn,
-  .rightColumn {
-    flex: 1 1 100%;
-    padding: 0;
-  }
-
-  .headerBox {
-    text-align: center;
-  }
-
-  .label {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
     margin: 0 auto;
+    padding: 20px;
   }
 
   .leftColumn {
-    position: static;
-    top: unset;
-    margin-bottom: 40px;
+    flex: 1 1 70%;
+    padding-right: 30px;
+    position: sticky;
+    top: 120px;
+    align-self: flex-start;
+
+    .headerBox {
+      width: 100%;
+
+      .label {
+        display: inline-block;
+        color: $muted;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 10px 20px;
+        border: 1px solid $border;
+        border-radius: 30px;
+      }
+
+      .title {
+        padding: 20px 0 10px 0;
+        color: $text;
+        font-size: 38px;
+        font-weight: 200;
+        opacity: 0.8;
+
+        span {
+          color: $accent;
+        }
+      }
+
+      .subtitle {
+        display: block;
+        letter-spacing: 1px;
+        font-size: 16px;
+        color: $text;
+        margin-bottom: 30px;
+      }
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+
+    .descriptions {
+      // paragraphes individuels
+      .description {
+        opacity: 0.8;
+        line-height: 1.8;
+        color: $text;
+
+        & + .description {
+          margin-top: 14px;
+        }
+      }
+    }
+
+    .descriptionList {
+      margin-top: 16px;
+      padding-left: 20px;
+      list-style: none;
+      color: $text;
+      opacity: 0.8;
+
+      li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+      }
+    }
+
+    .sectionButton {
+      margin-top: 20px;
+      text-align: center;
+      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: $text;
+      background: $btn-bg;
+      border: 1px solid $btn-border;
+      border-radius: 30px;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.7s ease;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
   }
 
-  .widgetWrapper {
-    padding-left: 0px;
+  .rightColumn {
+    flex: 1 1 30%;
+    position: relative;
+
+    .imageWrapper {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      position: relative;
+
+      .image {
+        width: auto;
+        height: 500px;
+        border-radius: 11px;
+        display: block;
+      }
+    }
   }
 
-  .timelineLine {
-    left: 5px;
-  }
+  // ====== Responsive ======
+  @media screen and (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
 
-  .milestoneDot {
-    left: 0px;
-  }
+    .leftColumn,
+    .rightColumn {
+      flex: 1 1 100%;
+      padding: 0;
+    }
 
-  .milestoneContent {
-    padding-left: 35px;
-  }
+    .leftColumn {
+      position: static;
+      top: unset;
+      margin-bottom: 40px;
 
-  .title {
-    font-size: 28px;
-    text-align: center;
+      .headerBox {
+        text-align: center;
+
+        .label {
+          margin: 0 auto;
+        }
+      }
+
+      .title {
+        font-size: 28px;
+        text-align: center;
+      }
+    }
+
+    .rightColumn {
+      .imageWrapper {
+        padding-left: 20px;
+        justify-content: center;
+
+        .image {
+          height: 350px;
+        }
+      }
+    }
   }
 }

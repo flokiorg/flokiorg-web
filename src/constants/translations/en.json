@@ -58,11 +58,19 @@
   },
   "donation": {
     "sectionLabel": "Donation",
-    "title": "Support",
-    "titleHighlight": "Us",
-    "remainingTitle": "in Crypto",
-    "description": "Support our mission with crypto donations — every contribution fuels growth and innovation.",
-    "buttonLabel": "DONATE"
+    "title": "Support the",
+    "titleHighlight": "Web of Fun",
+    "subtitle": "Help Us Build the Next Web — One Page of Fun at a Time",
+    "descriptions": [
+      "The <strong>Web of Fun (WOF)</strong> is Lokichain’s bold initiative to reimagine the internet through creativity, experimentation with the goal of reclaiming ownership of the web.",
+      "With your support, we empower builders, and dreamers to launch <strong>Fun Enhancement Possibilities (FEPs)</strong> the playful prototypes shaping the web’s next chapter.",
+      "Every donation fuels open-source tools, experiments, and magical digital experiences built by the community not for profit, but for a fair web."
+    ],
+    "descriptionList": [
+      "Because the future of the web shouldn’t just be decentralized.",
+      "We should take back ownership."
+    ],
+    "buttonLabel": "Donate Now"
   },
   "about": {
     "subtitle": "Key stats and highlights",

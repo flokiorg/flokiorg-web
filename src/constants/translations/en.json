@@ -60,7 +60,7 @@
     "sectionLabel": "Donation",
     "title": "Support the",
     "titleHighlight": "Web of Fun",
-    "subtitle": "Help Us Build the Next Web — One Page of Fun at a Time",
+    "subtitle": "Help Us Build the Next Web.",
     "descriptions": [
       "The <strong>Web of Fun (WOF)</strong> is Lokichain’s bold initiative to reimagine the internet through creativity, experimentation with the goal of reclaiming ownership of the web.",
       "With your support, we empower builders, and dreamers to launch <strong>Fun Enhancement Possibilities (FEPs)</strong> the playful prototypes shaping the web’s next chapter.",
@@ -70,6 +70,8 @@
       "Because the future of the web shouldn’t just be decentralized.",
       "We should take back ownership."
     ],
+    "imageTitle": "The next web is transforming energy into shared value and returning ownership to its source.",
+    "imageSubtitle": " The Book of WOF recording this shift.",
     "buttonLabel": "Donate Now"
   },
   "about": {

@@ -20,7 +20,6 @@ const Donation = () => {
               {t("donation.sectionLabel")}
             </div>
             <div className={styles.title}>
-              <span className={styles.icon}>💜</span>
               {t("donation.title")} <span>{t("donation.titleHighlight")}</span>
             </div>
             <div className={styles.subtitle}>{t("donation.subtitle")}</div>
@@ -40,26 +39,32 @@ const Donation = () => {
             <ul className={styles.descriptionList}>
               {descriptionList.map((item, idx) => (
                 <li key={idx}>
-                  <strong>{"> "}</strong> {item}
+                  <strong className={styles.bulletPoint}>{"> "}</strong> {item}
                 </li>
               ))}
             </ul>
           )}
 
-          <a
-            href={DONATION_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.sectionButton}
-          >
-            <span className={styles.icon}>💜</span>
-            {t("donation.buttonLabel")}
-          </a>
+          <div className={styles.buttonWrapper}>
+            <a
+              href={DONATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.sectionButton}
+            >
+              <span className={styles.icon}>💜</span>
+              {t("donation.buttonLabel")}
+            </a>
+          </div>
         </div>
 
         <div className={styles.rightColumn}>
           <div className={styles.imageWrapper}>
             <img src="/img/wof.png" className={styles.image} alt="Web of Fun" />
+            <div className={styles.imageTitle}>{t("donation.imageTitle")}</div>
+            <div className={styles.imageSubtitle}>
+              {t("donation.imageSubtitle")}
+            </div>
           </div>
         </div>
       </div>

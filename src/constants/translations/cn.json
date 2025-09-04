@@ -57,20 +57,22 @@
     "subtitle": "由 Scrypt 家族驱动的第一层区块链，每个区块都充满乐趣。"
   },
   "donation": {
-    "sectionLabel": "捐款",
+    "sectionLabel": "捐赠",
     "title": "支持",
-    "titleHighlight": "Web of Fun",
-    "subtitle": "帮助我们构建下一代网络——每次一个有趣的页面",
+    "titleHighlight": "趣味网络",
+    "subtitle": "帮助我们构建下一个网络。",
     "descriptions": [
-      "<strong>Web of Fun (WOF)</strong> 是 Lokichain 的一项大胆计划，通过创意和实验重新构想互联网，目标是夺回网络的所有权。",
-      "在您的支持下，我们赋予建设者和梦想家启动 <strong>Fun Enhancement Possibilities (FEPs)</strong> 的能力，这些是塑造网络下一个篇章的有趣原型。",
-      "每一次捐款都支持开源工具、实验和由社区创造的神奇数字体验，而不是为利润，而是为了一个公平的网络。"
+      "<strong>趣味网络 (WOF)</strong> 是 Lokichain 的大胆倡议，通过创意和实验重新构想网络，目标是夺回网络的所有权。",
+      "在您的支持下，我们赋予构建者和梦想家推出 <strong>趣味增强可能性 (FEPs)</strong>，这些是塑造网络下一章的趣味原型。",
+      "每一笔捐赠都支持开源工具、实验和由社区构建的神奇数字体验，这些并非以盈利为目的，而是为了一个公平的网络。"
     ],
     "descriptionList": [
-      "因为未来的网络不应该只是去中心化的。",
+      "因为未来的网络不应只是去中心化的。",
       "我们应该夺回所有权。"
     ],
-    "buttonLabel": "立即捐款"
+    "imageTitle": "下一个网络正在将能量转化为共享价值，并将所有权归还给其源头。",
+    "imageSubtitle": "《趣味网络之书》记录了这一转变。",
+    "buttonLabel": "立即捐赠"
   },
   "about": {
     "subtitle": "关键统计数据和亮点",

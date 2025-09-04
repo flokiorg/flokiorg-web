@@ -3,6 +3,7 @@
 $bg: #1d1d1d;
 $text: #fff;
 $muted: #d9d9d9;
+$muted2: #b0b0b0;
 $accent: #d0970f;
 $border: #363636;
 $btn-bg: rgba(182, 64, 245, 0.15);
@@ -23,11 +24,9 @@ $btn-border: #b744f6db;
   }
 
   .leftColumn {
-    flex: 1 1 70%;
+    flex: 1 1 60%;
     padding-right: 30px;
-    position: sticky;
-    top: 120px;
-    align-self: flex-start;
+    margin-bottom: 40px;
 
     .headerBox {
       width: 100%;
@@ -59,7 +58,7 @@ $btn-border: #b744f6db;
         display: block;
         letter-spacing: 1px;
         font-size: 16px;
-        color: $text;
+        color: $muted2;
         margin-bottom: 30px;
       }
     }
@@ -69,7 +68,6 @@ $btn-border: #b744f6db;
     }
 
     .descriptions {
-      // paragraphes individuels
       .description {
         opacity: 0.8;
         line-height: 1.8;
@@ -83,61 +81,104 @@ $btn-border: #b744f6db;
 
     .descriptionList {
       margin-top: 16px;
-      padding-left: 20px;
       list-style: none;
-      color: $text;
+      color: $muted2;
       opacity: 0.8;
 
       li {
         margin-bottom: 8px;
         line-height: 1.6;
+        .bulletPoint {
+          margin-right: 5px;
+          opacity: 0.8;
+          font-size: 1.2em;
+          color: $accent;
+        }
       }
     }
 
-    .sectionButton {
+    .buttonWrapper {
       margin-top: 20px;
-      text-align: center;
-      letter-spacing: 1px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      color: $text;
-      background: $btn-bg;
-      border: 1px solid $btn-border;
-      border-radius: 30px;
-      padding: 12px 25px;
-      font-size: 16px;
-      font-weight: bold;
-      transition: all 0.7s ease;
 
-      &:hover {
-        background: #fff;
-        color: #000;
+      .sectionButton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $text;
+        background: $btn-bg;
+        border: 1px solid $btn-border;
+        border-radius: 30px;
+        padding: 12px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: all 0.7s ease;
+
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
       }
     }
   }
 
   .rightColumn {
-    flex: 1 1 30%;
-    position: relative;
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
     .imageWrapper {
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
       align-items: center;
-      position: relative;
+      max-width: 100%;
 
       .image {
-        width: auto;
-        height: 500px;
+        max-width: 100%;
+        width: 300px;
+        height: auto;
         border-radius: 11px;
         display: block;
+      }
+
+      .imageTitle {
+        margin-top: 10px;
+        width: 400px;
+        color: $muted2;
+        font-size: 1.1em;
+        text-align: center;
+        font-style: italic;
+        quotes: "“" "”";
+
+        &:before {
+          content: open-quote;
+          opacity: 0.8;
+          margin-right: 5px;
+          font-weight: bold;
+          font-size: 1.2em;
+          color: $accent;
+        }
+
+        &:after {
+          content: close-quote;
+          font-weight: bold;
+          opacity: 0.8;
+          margin-left: 5px;
+          font-size: 1.2em;
+          color: $accent;
+        }
+      }
+      .imageSubtitle {
+        margin-top: 10px;
+        width: 400px;
+        color: #777;
+        font-size: 0.9em;
+        text-align: center;
       }
     }
   }
 
-  // ====== Responsive ======
   @media screen and (max-width: 900px) {
     .container {
       flex-direction: column;
@@ -151,31 +192,36 @@ $btn-border: #b744f6db;
 
     .leftColumn {
       position: static;
-      top: unset;
       margin-bottom: 40px;
 
       .headerBox {
         text-align: center;
-
-        .label {
-          margin: 0 auto;
-        }
       }
 
       .title {
         font-size: 28px;
         text-align: center;
+
+        span {
+          display: block;
+        }
+      }
+
+      .subtitle {
+        text-align: center;
+      }
+
+      .buttonWrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
       }
     }
 
     .rightColumn {
-      .imageWrapper {
-        padding-left: 20px;
-        justify-content: center;
-
-        .image {
-          height: 350px;
-        }
+      .imageWrapper .image {
+        height: auto;
+        width: 350px;
       }
     }
   }

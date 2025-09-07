@@ -1,4 +1,4 @@
-// Donations.module.scss
+// Donations.module.scss (optimisé)
 
 $bg: #1d1d1d;
 $text: #fff;
@@ -11,9 +11,9 @@ $btn-border: #b744f6db;
 
 .donationSection {
   background-color: $bg;
+  color: $text;
   padding: 60px 0;
   scroll-margin-top: 70px;
-  color: $text;
 
   .container {
     display: flex;
@@ -21,12 +21,14 @@ $btn-border: #b744f6db;
     max-width: 1300px;
     margin: 0 auto;
     padding: 20px;
+    overflow-x: clip; // évite tout scroll horizontal
   }
 
   .leftColumn {
     flex: 1 1 60%;
     padding-right: 30px;
     margin-bottom: 40px;
+    min-width: 280px;
 
     .headerBox {
       width: 100%;
@@ -40,6 +42,7 @@ $btn-border: #b744f6db;
         padding: 10px 20px;
         border: 1px solid $border;
         border-radius: 30px;
+        white-space: nowrap;
       }
 
       .title {
@@ -76,6 +79,10 @@ $btn-border: #b744f6db;
         & + .description {
           margin-top: 14px;
         }
+
+        // sécurité pour mots/URLs très longs
+        overflow-wrap: anywhere;
+        word-break: break-word;
       }
     }
 
@@ -84,10 +91,12 @@ $btn-border: #b744f6db;
       list-style: none;
       color: $muted2;
       opacity: 0.8;
+      padding-left: 0;
 
       li {
         margin-bottom: 8px;
         line-height: 1.6;
+
         .bulletPoint {
           margin-right: 5px;
           opacity: 0.8;
@@ -104,6 +113,7 @@ $btn-border: #b744f6db;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        gap: 8px;
         text-decoration: none;
         color: $text;
         background: $btn-bg;
@@ -112,11 +122,19 @@ $btn-border: #b744f6db;
         padding: 12px 25px;
         font-size: 16px;
         font-weight: bold;
-        transition: all 0.7s ease;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        will-change: transform;
 
         &:hover {
           background: #fff;
           color: #000;
+        }
+        &:active {
+          transform: translateY(1px);
+        }
+        &:focus-visible {
+          outline: 2px solid $btn-border;
+          outline-offset: 2px;
         }
       }
     }
@@ -127,6 +145,7 @@ $btn-border: #b744f6db;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    min-width: 260px;
 
     .imageWrapper {
       display: flex;
@@ -135,19 +154,28 @@ $btn-border: #b744f6db;
       max-width: 100%;
 
       .image {
-        max-width: 100%;
-        width: 300px;
+        display: block;
+        width: 100%;
+        max-width: 300px; // limite visuelle
         height: auto;
         border-radius: 11px;
-        display: block;
+      }
+
+      .imageTitle,
+      .imageSubtitle {
+        margin-top: 10px;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 8px; // évite de coller aux bords en mobile
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+        word-break: break-word;
       }
 
       .imageTitle {
-        margin-top: 10px;
-        width: 400px;
         color: $muted2;
         font-size: 1.1em;
-        text-align: center;
         font-style: italic;
         quotes: "“" "”";
 
@@ -159,7 +187,6 @@ $btn-border: #b744f6db;
           font-size: 1.2em;
           color: $accent;
         }
-
         &:after {
           content: close-quote;
           font-weight: bold;
@@ -169,13 +196,18 @@ $btn-border: #b744f6db;
           color: $accent;
         }
       }
+
       .imageSubtitle {
-        margin-top: 10px;
-        width: 400px;
         color: #777;
         font-size: 0.9em;
-        text-align: center;
       }
+    }
+  }
+
+  // Responsif
+  @media screen and (max-width: 1100px) {
+    .leftColumn .headerBox .title {
+      font-size: 32px;
     }
   }
 
@@ -188,6 +220,7 @@ $btn-border: #b744f6db;
     .rightColumn {
       flex: 1 1 100%;
       padding: 0;
+      min-width: 0; // important pour éviter les overflows flex
     }
 
     .leftColumn {
@@ -219,9 +252,12 @@ $btn-border: #b744f6db;
     }
 
     .rightColumn {
-      .imageWrapper .image {
-        height: auto;
-        width: 350px;
+      .imageWrapper {
+        .image {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+        }
       }
     }
   }

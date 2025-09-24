@@ -40,6 +40,9 @@
   gap: 10px;
 
   a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     color: #aaa;
     text-decoration: none;
 
@@ -50,6 +53,12 @@
     img {
       vertical-align: middle;
     }
+  }
+
+  .iconExternalLink {
+    fill: currentColor;
+    width: 12px;
+    height: 12px;
   }
 }
 

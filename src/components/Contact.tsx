@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "@styles/scss/Contact.module.scss";
 import { useTranslation } from "react-i18next";
+import styles from "@styles/scss/Contact.module.scss";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -23,7 +23,7 @@ const Contact = () => {
               key={index}
               href={social.link}
               target="_blank"
-              rel="noopener noreferrer"
+              className="no-external-icon"
             >
               <img
                 src={social.icon}

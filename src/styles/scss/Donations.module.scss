@@ -13,7 +13,7 @@ $btn-border: #b744f6db;
   background-color: $bg;
   color: $text;
   padding: 60px 0;
-  scroll-margin-top: 70px;
+  scroll-margin-top: calc(120px + var(--announcement-height, 0px));
 
   .container {
     display: flex;
@@ -25,6 +25,7 @@ $btn-border: #b744f6db;
   }
 
   .leftColumn {
+    max-width: 100%;
     flex: 1 1 60%;
     padding-right: 30px;
     margin-bottom: 40px;
@@ -120,14 +121,15 @@ $btn-border: #b744f6db;
         border: 1px solid $btn-border;
         border-radius: 30px;
         padding: 12px 25px;
-        font-size: 16px;
+        // Fluid, responsive label size: smaller on mobile, not small on desktop
+        font-size: clamp(14px, 2vw, 16px);
+        white-space: nowrap; // keep label on one line
         font-weight: bold;
         transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
         will-change: transform;
 
         &:hover {
-          background: #fff;
-          color: #000;
+          background: #c1d0970f;
         }
         &:active {
           transform: translateY(1px);
@@ -135,6 +137,16 @@ $btn-border: #b744f6db;
         &:focus-visible {
           outline: 2px solid $btn-border;
           outline-offset: 2px;
+        }
+      }
+
+      .secondButton {
+        background-color: #d0970f;
+        border-color: #d0970f;
+        margin-right:10px;
+
+        &:hover {
+          background: #c1d0970f;
         }
       }
     }
@@ -248,6 +260,15 @@ $btn-border: #b744f6db;
         margin-top: 20px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap; // allow wrapping to next line when needed
+        gap: 8px; // consistent spacing between buttons/rows
+
+        .sectionButton {
+          padding: 10px 16px; // tighter padding on small screens
+        }
+        .secondButton {
+          margin-right: 0; // rely on gap for spacing; better when wrapping
+        }
       }
     }
 

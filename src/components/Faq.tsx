@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "@styles/scss/Faq.module.scss";
 import { useTranslation } from "react-i18next";
+import styles from "@styles/scss/Faq.module.scss";
 
 const Faq = () => {
   const { t } = useTranslation();
@@ -27,11 +27,7 @@ const Faq = () => {
                   {index == 0 && q.linkLabel && (
                     <span>
                       (&quot;
-                      <a
-                        href={q.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                      <a href={q.link} target="_blank">
                         {q.linkLabel}
                       </a>
                       &quot;)

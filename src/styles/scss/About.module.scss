@@ -1,7 +1,7 @@
 .about {
   background: #000;
   padding: 60px 0 60px;
-  scroll-margin-top: 50px;
+  scroll-margin-top: calc(110px + var(--announcement-height, 0px));
 }
 
 .subtitle {
@@ -105,6 +105,8 @@
   opacity: 0.7;
   color: #fff;
 }
+
+
 
 @media screen and (max-width: 900px) {
   .box {

@@ -1,13 +1,18 @@
 {
   "header": {
+    "announcement": {
+      "message": "Lokiwiki is live. Your Flokicoin Knowledge Source.",
+      "ctaLabel": "探索 Lokiwiki",
+      "link": "https://docs.flokicoin.org"
+    },
     "menu": [
       { "label": "关于", "link": "#about" },
       { "label": "里程碑", "link": "#milestones" },
       { "label": "钱包", "link": "#wallets" },
       { "label": "区块浏览器", "link": "https://flokichain.info" },
       { "label": "主题", "link": "#topics" },
-      { "label": "常见问题", "link": "#faq" },
-      { "label": "社区", "link": "#contact" }
+      { "label": "文档", "link": "https://docs.flokicoin.org" },
+      { "label": "常见问题", "link": "#faq" }
     ],
     "socials": [
       {
@@ -31,7 +36,8 @@
       { "label": "英语", "value": "en" },
       { "label": "中文", "value": "cn" },
       { "label": "俄语", "value": "ru" }
-    ]
+    ],
+    "donateLabel": "Donate"
   },
   "slider": {
     "title": "Flokicoin 是",
@@ -62,17 +68,33 @@
     "titleHighlight": "趣味网络",
     "subtitle": "帮助我们构建下一个网络。",
     "descriptions": [
-      "<strong>趣味网络 (WOF)</strong> 是 Lokichain 的大胆倡议，通过创意和实验重新构想网络，目标是夺回网络的所有权。",
-      "在您的支持下，我们赋予构建者和梦想家推出 <strong>趣味增强可能性 (FEPs)</strong>，这些是塑造网络下一章的趣味原型。",
-      "每一笔捐赠都支持开源工具、实验和由社区构建的神奇数字体验，这些并非以盈利为目的，而是为了一个公平的网络。"
+      "<a href='https://docs.flokicoin.org/wof' target='_blank'>趣味网络（WoF）</a> 是 Lokichain 的一项大胆倡议，旨在通过创意与实验重新想象互联网，并最终把网络的所有权归还给每个人。",
+      "在你的支持下，我们将赋能建设者与梦想家，推出趣味增强提案（<a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a>），这些充满玩味的原型正在塑造下一代网络。",
+      "每一笔捐赠都将为开源工具、实验与由社区打造的奇妙数字体验提供燃料——不是为逐利，而是为了一个公平的网络。"
     ],
     "descriptionList": [
       "因为未来的网络不应只是去中心化的。",
       "我们应该夺回所有权。"
     ],
     "imageTitle": "下一个网络正在将能量转化为共享价值，并将所有权归还给其源头。",
-    "imageSubtitle": "《趣味网络之书》记录了这一转变。",
-    "buttonLabel": "立即捐赠"
+    "imageSubtitle": "《趣味网络之书》正在记录这一转变。",
+    "buttonLabel": "立即捐赠",
+    "secondButtonLabel": "WoF 白皮书",
+    "wofpaperUrl": "https://docs.flokicoin.org/wof"
+  },
+  "donationEcosystem": {
+    "sectionLabel": "Ecosystem Donation",
+    "title": "Power the",
+    "titleHighlight": "Flokicoin Ecosystem",
+    "subtitle": "Transparent funding for builders and the community.",
+    "descriptions": [
+      "We are collecting donations dedicated to expanding the Flokicoin ecosystem — supporting protocol upgrades, developer grants, community hubs, and integrations.",
+      "Every action financed with this treasury is recorded in a public sheet that anyone can audit, keeping the entire process transparent from proposal to delivery."
+    ],
+    "descriptionList": [],
+    "imageTitle": "Transparency and accountability keep builders unstoppable.",
+    "imageSubtitle": "Follow every allocation inside the shared treasury sheet.",
+    "buttonLabel": "Donate"
   },
   "about": {
     "subtitle": "关键统计数据和亮点",
@@ -80,20 +102,20 @@
       {
         "image": "/img/ico01.png",
         "subtitle": "创新的坚实基础",
-        "title": "第一层",
-        "description": "Flokicoin 运行在其自己的区块链上，支持安全、可扩展和去中心化的应用程序。"
+        "title": "Lokichain",
+        "description": "Flokicoin 运行在 <a href='https://docs.flokicoin.org/lokichain' target='_blank'>Lokichain</a> 上，这是一条自有区块链，驱动安全、可扩展、去中心化的应用。"
       },
       {
         "image": "/img/ico02.png",
         "subtitle": "合并挖矿",
         "title": "Scrypt 家族",
-        "description": "通过加入 Scrypt 家族，Flokicoin 确保了快速、节能的挖矿，同时保持强大的网络安全性。"
+        "description": "通过加入 Scrypt 家族，Flokicoin 确保了快速、节能的挖矿，同时保持强大的网络安全性。<a href='https://docs.flokicoin.org/mining' target='_blank'>了解更多</a>"
       },
       {
         "image": "/img/ico03.png",
         "subtitle": "社区驱动",
-        "title": "xFun",
-        "description": "Flokicoin 通过 FEP（Fun Enhancement Possibilities）不断发展，激发创新和乐趣。"
+        "title": "FIPs",
+        "description": "Flokicoin 通过 <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a>（Flokicoin 改进提案）不断演进，小想法也能带来大转变。"
       }
     ]
   },
@@ -102,7 +124,7 @@
     "subtitle": "社区",
     "subtitleHighlight": "里程碑",
     "remainingSubtitle": "成就和未完成的任务.",
-    "intro": "每个里程碑都反映了协作的力量，通过我们的沟通渠道塑造，并通过 FEP（Fun Enhancement Possibilities）和 FIP（Flokicoin Improvement Proposals）进行完善。",
+    "intro": "每一个里程碑都体现了协作的力量：它通过我们的沟通渠道塑造，并由 <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a>（Flokicoin 改进提案）指引；同时，<a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a>（趣味增强提案）为 WoF 运动开辟新的路径。",
     "milestones": [
       {
         "title": "创世",
@@ -146,7 +168,7 @@
         "title": "tWallet",
         "button": "下载",
         "description": "使用我们简单、安全、用户友好的钱包存储、发送和接收您的数字资产，设计简洁，安心无忧。",
-        "link": "https://github.com/flokiorg/twallet/releases"
+        "link": "https://docs.flokicoin.org/wallets/twallet/v1#install"
       },
       {
         "title": "区块浏览器",
@@ -201,17 +223,17 @@
       {
         "title": "Flokicoin (FLC) 挖矿指南",
         "image": "/img/mine.jpg",
-        "link": "https://github.com/flokiorg/grpc-miner/wiki"
+        "link": "https://docs.flokicoin.org/mining"
       },
       {
         "title": "如何设置您的 Flokicoin 钱包",
         "image": "/img/secure.jpg",
-        "link": "https://github.com/flokiorg/tWallet/wiki"
+        "link": "https://docs.flokicoin.org/wallets/twallet"
       },
       {
         "title": "Flokicoin 的经济和通胀率",
         "image": "/img/economy.jpg",
-        "link": "https://github.com/flokiorg/go-flokicoin/wiki"
+        "link": "https://docs.flokicoin.org/economy"
       }
     ]
   },
@@ -358,47 +380,28 @@
         "title": "学习",
         "links": [
           {
-            "label": "什么是 Flokicoin？",
-            "link": "https://github.com/flokiorg/go-flokicoin/wiki"
+            "label": "Flokicoin 经济",
+            "link": "https://docs.flokicoin.org/economy"
           },
           {
-            "label": "如何挖矿？",
-            "link": "https://github.com/flokiorg/grpc-miner/wiki"
+            "label": "挖矿指南",
+            "link": "https://docs.flokicoin.org/mining"
           },
           {
             "label": "钱包指南",
-            "link": "https://github.com/flokiorg/tWallet/wiki"
+            "link": "https://docs.flokicoin.org/wallets/twallet"
           }
         ]
       },
       {
         "title": "使用",
         "links": [
-          {
-            "label": "运行节点",
-            "link": "https://github.com/myfloki/fullnode"
-          },
-          {
-            "label": "成为运营者",
-            "link": "https://github.com/myfloki/operator"
-          },
-          {
-            "label": "API 参考",
-            "link": "https://flokichain.info/docs/api/rest"
-          }
+          { "label": "运行节点", "link": "https://docs.flokicoin.org/lokichain#run-a-node" },
+          { "label": "API 参考", "link": "https://flokichain.info/docs/api/rest" },
+          { "label": "运行运营者", "link": "https://docs.flokicoin.org/lokichain#run-a-node" }
         ]
       },
-      {
-        "title": "社区产品",
-        "links": [
-          {
-            "label": "Flokicoin 区块浏览器",
-            "link": "https://flokichain.info"
-          },
-          { "label": "myFloki – 工具链", "link": "https://myfloki.com" },
-          { "label": "Fpool – 挖矿池", "link": "https://fpool.net" }
-        ]
-      }
+      { "title": "社区", "links": [ { "label": "资源", "link": "https://docs.flokicoin.org/resources" } ] }
     ]
   }
 }

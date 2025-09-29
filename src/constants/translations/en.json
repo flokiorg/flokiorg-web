@@ -1,13 +1,18 @@
 {
   "header": {
+    "announcement": {
+      "message": "Lokiwiki is live. Your Flokicoin Knowledge Source.",
+      "ctaLabel": "Explore Lokiwiki",
+      "link": "https://docs.flokicoin.org"
+    },
     "menu": [
       { "label": "About", "link": "#about" },
       { "label": "Milestones", "link": "#milestones" },
       { "label": "Wallet", "link": "#wallets" },
       { "label": "Explorer", "link": "https://flokichain.info" },
       { "label": "Topics", "link": "#topics" },
-      { "label": "FAQ", "link": "#faq" },
-      { "label": "Community", "link": "#contact" }
+      { "label": "Docs", "link": "https://docs.flokicoin.org" },
+      { "label": "FAQ", "link": "#faq" }
     ],
     "socials": [
       {
@@ -31,7 +36,8 @@
       { "label": "English", "value": "en" },
       { "label": "Chinese", "value": "cn" },
       { "label": "Russian", "value": "ru" }
-    ]
+    ],
+    "donateLabel": "Donate"
   },
   "slider": {
     "title": "Flokicoin is",
@@ -62,8 +68,8 @@
     "titleHighlight": "Web of Fun",
     "subtitle": "Help Us Build the Next Web.",
     "descriptions": [
-      "The <strong>Web of Fun (WOF)</strong> is Lokichain’s bold initiative to reimagine the internet through creativity, experimentation with the goal of reclaiming ownership of the web.",
-      "With your support, we empower builders, and dreamers to launch <strong>Fun Enhancement Possibilities (FEPs)</strong> the playful prototypes shaping the web’s next chapter.",
+      "The <a href='https://docs.flokicoin.org/wof' target='_blank'>Web of Fun (WoF)</a> is Lokichain’s bold initiative to reimagine the internet through creativity, experimentation with the goal of reclaiming ownership of the web.",
+      "With your support, we empower builders, and dreamers to launch Fun Enhancement Possibilities (<a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a>) the playful prototypes shaping the web’s next chapter.",
       "Every donation fuels open-source tools, experiments, and magical digital experiences built by the community not for profit, but for a fair web."
     ],
     "descriptionList": [
@@ -72,7 +78,23 @@
     ],
     "imageTitle": "The next web is transforming energy into shared value and returning ownership to its source.",
     "imageSubtitle": " The Book of WOF recording this shift.",
-    "buttonLabel": "Donate Now"
+    "buttonLabel": "Donate Now",
+    "secondButtonLabel": "WoF Paper",
+    "wofpaperUrl": "https://docs.flokicoin.org/wof"
+  },
+  "donationEcosystem": {
+    "sectionLabel": "Ecosystem Donation",
+    "title": "Power the",
+    "titleHighlight": "Flokicoin Ecosystem",
+    "subtitle": "Transparent funding for builders and the community.",
+    "descriptions": [
+      "We are collecting donations dedicated to expanding the Flokicoin ecosystem — supporting protocol upgrades, developer grants, community hubs, and integrations.",
+      "Every action financed with this treasury is recorded in a public sheet that anyone can audit, keeping the entire process transparent from proposal to delivery."
+    ],
+    "descriptionList": [],
+    "imageTitle": "Transparency and accountability keep builders unstoppable.",
+    "imageSubtitle": "Follow every allocation inside the shared treasury sheet.",
+    "buttonLabel": "Donate"
   },
   "about": {
     "subtitle": "Key stats and highlights",
@@ -80,20 +102,20 @@
       {
         "image": "/img/ico01.png",
         "subtitle": "Solid Foundation for Innovation",
-        "title": "Layer 1",
-        "description": "Flokicoin runs on its own blockchain, powering secure, scalable, and decentralized applications."
+        "title": "Lokichain",
+        "description": "Flokicoin runs on <a href='https://docs.flokicoin.org/lokichain' target='_blank'>Lokichain</a>, its own blockchain, powering secure, scalable, and decentralized applications."
       },
       {
         "image": "/img/ico02.png",
         "subtitle": "Merged Mining",
         "title": "Scrypt family",
-        "description": "By joining the scrypt family, Flokicoin ensures fast, energy-efficient mining while maintaining strong network security."
+        "description": "By joining the scrypt family, Flokicoin ensures fast, energy-efficient mining while maintaining strong network security. <a href='https://docs.flokicoin.org/mining' target='_blank'>Learn more</a>"
       },
       {
         "image": "/img/ico03.png",
         "subtitle": "Community-driven",
-        "title": "xFun",
-        "description": "Flokicoin evolves through FEPs (Fun Enhancement Possibilities), inspiring innovation and fun."
+        "title": "FIPs",
+        "description": "Flokicoin evolves through <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a> (Flokicoin Improvement Proposals), where small ideas make big turns."
       }
     ]
   },
@@ -102,7 +124,7 @@
     "subtitle": "Community",
     "subtitleHighlight": "Milestone",
     "remainingSubtitle": "Achievements and Backlog.",
-    "intro": "Each milestone reflects the strength of collaboration, shaped through our communication channels and refined via FEPs (Fun Enhancement Possibilities) and FIPs (Flokicoin Improvement Proposals).",
+    "intro": "Each milestone reflects the strength of collaboration, shaped through our communication channels and guided by <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a> (Flokicoin Improvement Proposals), while <a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a> (Fun Enhancement Possibilities) open new paths within the WoF movement.",
     "milestones": [
       {
         "title": "Genesis",
@@ -146,7 +168,7 @@
         "title": "tWallet",
         "button": "DOWNLOAD",
         "description": "Store, send, and receive your digital assets with our simple, secure, and user-friendly wallet, designed for simplicity and peace of mind.",
-        "link": "https://github.com/flokiorg/twallet/releases"
+        "link": "https://docs.flokicoin.org/wallets/twallet/v1#install"
       },
       {
         "title": "Explorer",
@@ -186,11 +208,11 @@
       },
       {
         "question": "How can I join the Flokicoin community?",
-        "answer": "You can join the Flokicoin community through our social media channels and chat groups. Get involved in governance decisions, participate in development discussions, and help define the fun through FEPs (Fun Enhancement Possibilities)."
+        "answer": "You can join the Flokicoin community through our social media channels and chat groups. Get involved in governance decisions, participate in development discussions, and help define the fun through <a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a> (Fun Enhancement Possibilities)."
       },
       {
         "question": "How can I contribute to Flokicoin as a developer?",
-        "answer": "As a developer, you can contribute to Flokicoin by accessing the open-source code on our Git repositories. You can submit improvements, review code, and share ideas through FIPs (Flokicoin Improvement Proposals) or community discussions."
+        "answer": "As a developer, you can contribute to Flokicoin by accessing the open-source code on our Git repositories. You can submit improvements, review code, and draft ideas through <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a> (Flokicoin Improvement Proposals) or community discussions."
       }
     ]
   },
@@ -201,17 +223,17 @@
       {
         "title": "Guide to Mining Flokicoin (FLC)",
         "image": "/img/mine.jpg",
-        "link": "https://github.com/flokiorg/grpc-miner/wiki"
+        "link": "https://docs.flokicoin.org/mining"
       },
       {
         "title": "How to setup your Flokicoin wallet",
         "image": "/img/secure.jpg",
-        "link": "https://github.com/flokiorg/tWallet/wiki"
+        "link": "https://docs.flokicoin.org/wallets/twallet/v1"
       },
       {
         "title": "Flokicoin's economy and inflation rate",
         "image": "/img/economy.jpg",
-        "link": "https://github.com/flokiorg/go-flokicoin/wiki"
+        "link": "https://docs.flokicoin.org/economy"
       }
     ]
   },
@@ -358,16 +380,16 @@
         "title": "Learn",
         "links": [
           {
-            "label": "What is Flokicoin?",
-            "link": "https://github.com/flokiorg/go-flokicoin/wiki"
+            "label": "Flokicoin Economy",
+            "link": "https://docs.flokicoin.org/economy"
           },
           {
-            "label": "How to mine?",
-            "link": "https://github.com/flokiorg/grpc-miner/wiki"
+            "label": "Mining Guide",
+            "link": "https://docs.flokicoin.org/mining"
           },
           {
             "label": "Wallet Guide",
-            "link": "https://github.com/flokiorg/tWallet/wiki"
+            "link": "https://docs.flokicoin.org/wallets/twallet"
           }
         ]
       },
@@ -376,24 +398,22 @@
         "links": [
           {
             "label": "Run a node",
-            "link": "https://github.com/myfloki/fullnode"
-          },
-          {
-            "label": "Run an operator",
-            "link": "https://github.com/myfloki/operator"
+            "link": "https://docs.flokicoin.org/lokichain#run-a-node"
           },
           {
             "label": "API Reference",
             "link": "https://flokichain.info/docs/api/rest"
+          },
+          {
+            "label": "Run an operator",
+            "link": "https://docs.flokicoin.org/lokichain#run-a-node"
           }
         ]
       },
       {
-        "title": "Community Products",
+        "title": "Community",
         "links": [
-          { "label": "Flokicoin Explorer", "link": "https://flokichain.info" },
-          { "label": "myFloki – Toolchain", "link": "https://myfloki.com" },
-          { "label": "Fpool – Mining Pool", "link": "https://fpool.net" }
+          { "label": "Resources", "link": "https://docs.flokicoin.org/resources" }
         ]
       }
     ]

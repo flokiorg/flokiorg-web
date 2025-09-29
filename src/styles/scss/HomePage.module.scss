@@ -5,6 +5,6 @@
   .containerBoxed {
     height: 100%;
     align-items: center;
-    padding-top: 80px;
+    padding-top: calc(80px + var(--announcement-height, 0px));
   }
 }

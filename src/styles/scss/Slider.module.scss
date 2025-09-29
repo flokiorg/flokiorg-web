@@ -2,7 +2,7 @@
   border-bottom: 2px solid #252525;
   padding: 0 30px;
   position: relative;
-  scroll-margin-top: 70px;
+  scroll-margin-top: calc(120px + var(--announcement-height, 0px));
 
   &:after {
     content: '';

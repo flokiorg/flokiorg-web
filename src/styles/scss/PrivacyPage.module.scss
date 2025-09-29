@@ -1,7 +1,7 @@
 .main {
   background: #000;
   color: #fff;
-  padding: 100px 0;
+  padding: calc(100px + var(--announcement-height, 0px)) 0 100px;
 }
 
 .containerBoxed {

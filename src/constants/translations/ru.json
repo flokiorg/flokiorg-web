@@ -1,13 +1,18 @@
 {
   "header": {
+    "announcement": {
+      "message": "Lokiwiki is live. Your Flokicoin Knowledge Source.",
+      "ctaLabel": "Изучить Lokiwiki",
+      "link": "https://docs.flokicoin.org"
+    },
     "menu": [
       { "label": "О проекте", "link": "#about" },
       { "label": "Этапы", "link": "#milestones" },
       { "label": "Кошелек", "link": "#wallets" },
       { "label": "Обозреватель", "link": "https://flokichain.info" },
       { "label": "Темы", "link": "#topics" },
-      { "label": "Вопросы", "link": "#faq" },
-      { "label": "Сообщество", "link": "#contact" }
+      { "label": "Документы", "link": "https://docs.flokicoin.org" },
+      { "label": "Вопросы", "link": "#faq" }
     ],
     "socials": [
       {
@@ -31,7 +36,8 @@
       { "label": "English", "value": "en" },
       { "label": "Chinese", "value": "cn" },
       { "label": "Русский", "value": "ru" }
-    ]
+    ],
+    "donateLabel": "Donate"
   },
   "slider": {
     "title": "Flokicoin — это",
@@ -62,17 +68,33 @@
     "titleHighlight": "Веб Развлечений",
     "subtitle": "Помогите нам построить Следующий Веб.",
     "descriptions": [
-      "<strong>Веб Развлечений (WOF)</strong> - это смелая инициатива Lokichain, направленная на переосмысление интернета через творчество и эксперименты с целью возвращения права собственности на веб.",
-      "С вашей поддержкой мы даем возможность создателям и мечтателям запускать <strong>Возможности Увеличения Развлечений (FEPs)</strong> - игривые прототипы, формирующие следующую главу веба.",
-      "Каждое пожертвование поддерживает открытые инструменты, эксперименты и волшебные цифровые опыты, создаваемые сообществом не ради прибыли, а ради справедливого веба."
+      "<a href='https://docs.flokicoin.org/wof' target='_blank'>Web of Fun (WoF)</a> — смелая инициатива Lokichain, переосмысливающая интернет через творчество и эксперименты, чтобы вернуть людям право собственности на сеть.",
+      "С вашей поддержкой мы даем создателям и мечтателям возможность запускать Fun Enhancement Possibilities (<a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a>) — игривые прототипы, формирующие следующую главу веба.",
+      "Каждое пожертвование подпитывает открытые инструменты, эксперименты и волшебные цифровые впечатления, создаваемые сообществом не ради прибыли, а ради честного интернета."
     ],
     "descriptionList": [
       "Потому что будущее веба не должно быть только децентрализованным.",
       "Мы должны вернуть себе право собственности."
     ],
     "imageTitle": "Следующий веб преобразует энергию в общую ценность и возвращает право собственности его источнику.",
-    "imageSubtitle": "Книга WOF фиксирует этот сдвиг.",
-    "buttonLabel": "Пожертвовать Сейчас"
+    "imageSubtitle": "Книга WoF фиксирует этот сдвиг.",
+    "buttonLabel": "Пожертвовать сейчас",
+    "secondButtonLabel": "Белая книга WoF",
+    "wofpaperUrl": "https://docs.flokicoin.org/wof"
+  },
+  "donationEcosystem": {
+    "sectionLabel": "Ecosystem Donation",
+    "title": "Power the",
+    "titleHighlight": "Flokicoin Ecosystem",
+    "subtitle": "Transparent funding for builders and the community.",
+    "descriptions": [
+      "We are collecting donations dedicated to expanding the Flokicoin ecosystem — supporting protocol upgrades, developer grants, community hubs, and integrations.",
+      "Every action financed with this treasury is recorded in a public sheet that anyone can audit, keeping the entire process transparent from proposal to delivery."
+    ],
+    "descriptionList": [],
+    "imageTitle": "Transparency and accountability keep builders unstoppable.",
+    "imageSubtitle": "Follow every allocation inside the shared treasury sheet.",
+    "buttonLabel": "Donate"
   },
   "about": {
     "subtitle": "Ключевые показатели и особенности",
@@ -80,20 +102,20 @@
       {
         "image": "/img/ico01.png",
         "subtitle": "Надежная основа для инноваций",
-        "title": "Уровень 1",
-        "description": "Flokicoin работает на собственной блокчейн-сети, обеспечивая безопасность, масштабируемость и децентрализацию."
+        "title": "Lokichain",
+        "description": "Flokicoin работает на <a href='https://docs.flokicoin.org/lokichain' target='_blank'>Lokichain</a> — собственной блокчейн‑сети, обеспечивающей безопасные, масштабируемые и децентрализованные приложения."
       },
       {
         "image": "/img/ico02.png",
         "subtitle": "Объединенная добыча",
         "title": "Семейство Scrypt",
-        "description": "Вступив в семейство Scrypt, Flokicoin обеспечивает быструю и энергоэффективную добычу с высокой безопасностью сети."
+        "description": "Присоединившись к семейству Scrypt, Flokicoin обеспечивает быстрый и энергоэффективный майнинг при сохранении высокой безопасности сети. <a href='https://docs.flokicoin.org/mining' target='_blank'>Подробнее</a>"
       },
       {
         "image": "/img/ico03.png",
         "subtitle": "Управление сообществом",
-        "title": "xFun",
-        "description": "Flokicoin развивается через FEP (Возможности улучшения веселья), вдохновляя на инновации и удовольствие."
+        "title": "FIPs",
+        "description": "Flokicoin развивается через <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a> (Flokicoin Improvement Proposals), где маленькие идеи приводят к большим поворотам."
       }
     ]
   },
@@ -102,7 +124,7 @@
     "subtitle": "Сообщество",
     "subtitleHighlight": "Вехи",
     "remainingSubtitle": "Достижения и незавершенные задачи.",
-    "intro": "Каждая веха отражает силу сотрудничества, формируемого через наши каналы связи и уточнённого с помощью FEP и FIP.",
+    "intro": "Каждая веха отражает силу сотрудничества, сформированного через наши каналы общения и направляемого <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a> (Flokicoin Improvement Proposals), тогда как <a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a> (Fun Enhancement Possibilities) открывают новые пути в движении WoF.",
     "milestones": [
       {
         "title": "Генезис",
@@ -146,7 +168,7 @@
         "title": "tWallet",
         "button": "СКАЧАТЬ",
         "description": "Храните, отправляйте и получайте цифровые активы с помощью простого, безопасного и удобного кошелька.",
-        "link": "https://github.com/flokiorg/twallet/releases"
+        "link": "https://docs.flokicoin.org/wallets/twallet/v1#install"
       },
       {
         "title": "Обозреватель",
@@ -201,17 +223,17 @@
       {
         "title": "Руководство по майнингу Flokicoin (FLC)",
         "image": "/img/mine.jpg",
-        "link": "https://github.com/flokiorg/grpc-miner/wiki"
+        "link": "https://docs.flokicoin.org/mining"
       },
       {
         "title": "Как настроить кошелёк Flokicoin",
         "image": "/img/secure.jpg",
-        "link": "https://github.com/flokiorg/tWallet/wiki"
+        "link": "https://docs.flokicoin.org/wallets/twallet"
       },
       {
         "title": "Экономика и инфляция Flokicoin",
         "image": "/img/economy.jpg",
-        "link": "https://github.com/flokiorg/go-flokicoin/wiki"
+        "link": "https://docs.flokicoin.org/economy"
       }
     ]
   },
@@ -360,51 +382,20 @@
       {
         "title": "Изучить",
         "links": [
-          {
-            "label": "Что такое Flokicoin?",
-            "link": "https://github.com/flokiorg/go-flokicoin/wiki"
-          },
-          {
-            "label": "Как майнить?",
-            "link": "https://github.com/flokiorg/grpc-miner/wiki"
-          },
-          {
-            "label": "Руководство по кошельку",
-            "link": "https://github.com/flokiorg/tWallet/wiki"
-          }
+          { "label": "Экономика Flokicoin", "link": "https://docs.flokicoin.org/economy" },
+          { "label": "Руководство по майнингу", "link": "https://docs.flokicoin.org/mining" },
+          { "label": "Руководство по кошельку", "link": "https://docs.flokicoin.org/wallets/twallet" }
         ]
       },
       {
         "title": "Использовать",
         "links": [
-          {
-            "label": "Запустить узел",
-            "link": "https://github.com/myfloki/fullnode"
-          },
-          {
-            "label": "Стать оператором",
-            "link": "https://github.com/myfloki/operator"
-          },
-          {
-            "label": "API Документация",
-            "link": "https://flokichain.info/docs/api/rest"
-          }
+          { "label": "Запустить узел", "link": "https://docs.flokicoin.org/lokichain#run-a-node" },
+          { "label": "API Справочник", "link": "https://flokichain.info/docs/api/rest" },
+          { "label": "Запустить оператора", "link": "https://docs.flokicoin.org/lokichain#run-a-node" }
         ]
       },
-      {
-        "title": "Продукты сообщества",
-        "links": [
-          {
-            "label": "Обозреватель Flokicoin ",
-            "link": "https://flokichain.info"
-          },
-          {
-            "label": "myFloki — инструментарий",
-            "link": "https://myfloki.com"
-          },
-          { "label": "Fpool — майнинг-пул", "link": "https://fpool.net" }
-        ]
-      }
+      { "title": "Сообщество", "links": [ { "label": "Ресурсы", "link": "https://docs.flokicoin.org/resources" } ] }
     ]
   }
 }

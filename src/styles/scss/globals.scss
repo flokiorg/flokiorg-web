@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --announcement-height: 0px;
+}
+
 html {
   height: 100%;
 }
@@ -70,4 +74,37 @@ header {
   max-width: 100%;
   height: auto;
   position: relative;
+}
+
+a.no-external-icon::after {
+  content: none !important;
+}
+
+/* External link indicator: box with arrow inside a square */
+a[target="_blank"] {
+  display: inline-flex;
+  align-items: center;
+}
+
+a[target="_blank"]::after {
+  content: '';
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.3em;
+  font-size: 0.8em;
+  vertical-align: text-top;
+  opacity: 0.85;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='currentColor' d='M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z'></path></svg>") no-repeat center / contain;
+          mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='currentColor' d='M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z'></path></svg>") no-repeat center / contain;
+}
+
+a {
+  color: #d0970f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }

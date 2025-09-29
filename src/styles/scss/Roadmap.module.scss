@@ -1,7 +1,7 @@
 .roadmapSection {
   background-color: #131313;
   padding: 60px 0;
-  scroll-margin-top: 70px;
+  scroll-margin-top: calc(120px + var(--announcement-height, 0px));
 }
 
 .container {
@@ -16,7 +16,7 @@
   flex: 1 1 50%;
   padding-right: 30px;
   position: sticky;
-  top: 120px;
+  top: calc(120px + var(--announcement-height, 0px));
   align-self: flex-start;
 }
 

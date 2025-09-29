@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import styles from "@styles/scss/Slider.module.scss";
 import { useTranslation } from "react-i18next";
+import styles from "@styles/scss/Slider.module.scss";
 
 const Slider = () => {
   const { t } = useTranslation();

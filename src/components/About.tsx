@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "@styles/scss/About.module.scss";
 import { useTranslation } from "react-i18next";
-import Image from "next/image";
+import styles from "@styles/scss/About.module.scss";
 
 const About = () => {
   const { t } = useTranslation();
@@ -31,7 +30,7 @@ const About = () => {
                     <h5 className={styles.boxtitle}>{card.title}</h5>
                   </div>
                 </div>
-                <p>{card.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: card.description }} />
               </div>
             </div>
           </div>

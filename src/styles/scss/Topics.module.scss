@@ -1,7 +1,7 @@
 .topicsSection {
   background: #000;
   padding: 60px 0;
-  scroll-margin-top: 70px;
+  scroll-margin-top: calc(120px + var(--announcement-height, 0px));
   text-align: center;
 }
 
@@ -32,50 +32,76 @@
 }
 
 .cardGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
   justify-content: center;
 }
 
 .topicCard {
-  width: calc(33.333% - 20px);
   background-color: #171717;
-  border-radius: 11px;
-  padding: 16px;
+  border-radius: 14px;
   border: 1px solid #2b2b2b;
-  transition: background-color 0.3s ease;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
 
   &:hover {
-    background-color: #202020;
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    border-color: rgba(208, 151, 15, 0.5);
   }
+}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardImageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .cardImage {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 10px;
   display: block;
+  transition: transform 0.4s ease;
 }
 
-.cardText {
-  color: #d4d4d4;
-  font-size: 18px;
-  line-height: 1.7;
+.topicCard:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 20px 22px 20px;
   text-align: left;
 }
 
-@media screen and (max-width: 900px) {
-  .topicCard {
-    width: 100%;
-  }
+.cardTitle {
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
 
+.cardDescription {
+  color: #bcbcbc;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 900px) {
   .sectionTitle {
     font-size: 28px;
   }

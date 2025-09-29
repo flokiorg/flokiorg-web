@@ -6,6 +6,10 @@
     background-color: #131313 !important;
   }
 
+  :global(#ecosystem-donation) {
+    background-color: #131313 !important;
+  }
+
   :global(#donationLabel) {
     display: none !important;
   }
@@ -13,7 +17,32 @@
   .containerBoxed {
     height: 100%;
     align-items: center;
-    padding: 50px 0 50px 0;
+    padding: calc(90px + var(--announcement-height, 0px)) 0 50px 0;
     background: #131313;
+  }
+
+  .sectionDivider {
+    position: relative;
+    width: min(90%, 720px);
+    height: 1px;
+    margin: 0px auto;
+    background: linear-gradient(
+      90deg,
+      rgba(182, 64, 245, 0) 0%,
+      rgba(182, 64, 245, 0.45) 25%,
+      #d0970f 50%,
+      rgba(182, 64, 245, 0.45) 75%,
+      rgba(182, 64, 245, 0) 100%
+    );
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -18px;
+      transform: translateX(-50%);
+      height: 36px;
+      border-left: 2px solid #d0970f;
+    }
   }
 }

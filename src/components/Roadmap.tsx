@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "@styles/scss/Roadmap.module.scss";
 import { useTranslation } from "react-i18next";
+import styles from "@styles/scss/Roadmap.module.scss";
 
 const Roadmap = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const Roadmap = () => {
               {t("roadmap.remainingSubtitle")}
             </div>
           </div>
-          <p className={styles.description}>{t("roadmap.intro")}</p>
+          <p className={styles.description} dangerouslySetInnerHTML={{ __html: t("roadmap.intro") }}/>
         </div>
 
         <div className={styles.rightColumn}>

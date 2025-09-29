@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "@styles/scss/Wallets.module.scss";
 import { useTranslation } from "react-i18next";
+import styles from "@styles/scss/Wallets.module.scss";
 
 const Wallets = () => {
   const { t } = useTranslation();
@@ -18,8 +18,7 @@ const Wallets = () => {
                   <a
                     href={card.link}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.cardButton}
+                    className={`${styles.cardButton} no-external-icon`}
                   >
                     {card.button}
                   </a>

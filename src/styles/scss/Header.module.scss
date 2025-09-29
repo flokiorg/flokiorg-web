@@ -1,6 +1,68 @@
-.header {
+.announcementBar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  background: linear-gradient(90deg, #d0970f 0%, #f6c560 100%);
+  color: #0b0b0b;
+  backdrop-filter: blur(10px);
+}
+
+.announcementInner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  text-align: center;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px 30px;
+    gap: 18px;
+    text-align: center;
+  }
+}
+
+.announcementText {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #0b0b0b;
+
+  @media (min-width: 900px) {
+    font-size: 16px;
+  }
+}
+
+.announcementLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(6, 6, 6, 0.85);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: background 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+  }
+}
+
+.header {
+  position: fixed;
+  top: var(--announcement-height, 0px);
   left: 0;
   right: 0;
   z-index: 5;
@@ -58,6 +120,69 @@
   display: flex;
   align-items: center;
   gap: 14px;
+}
+
+
+.donateButton {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  color: #d0970f;
+  transition: color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+
+  &:hover {
+    color: #f1c66b;
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #d0970f;
+    outline-offset: 4px;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 15px;
+  }
+}
+
+.donateHeart {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2M5NjE5OCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNi43MzYgNEM0LjY1NyA0IDIuNSA1Ljg4IDIuNSA4LjUxNGMwIDMuMTA3IDIuMzI0IDUuOTYgNC44NjEgOC4xMmEyOS43IDI5LjcgMCAwIDAgNC41NjYgMy4xNzVsLjA3My4wNDEuMDczLS4wNGMuMjcxLS4xNTMuNjYxLS4zOCAxLjEzLS42NzQuOTQtLjU4OCAyLjE5LTEuNDQxIDMuNDM2LTIuNTAyIDIuNTM3LTIuMTYgNC44NjEtNS4wMTMgNC44NjEtOC4xMkMyMS41IDUuODggMTkuMzQzIDQgMTcuMjY0IDRjLTIuMTA2IDAtMy44MDEgMS4zODktNC41NTMgMy42NDNhLjc1Ljc1IDAgMCAxLTEuNDIyIDBDMTAuNTM3IDUuMzg5IDguODQxIDQgNi43MzYgNE0xMiAyMC43MDNsLjM0My42NjdhLjc1Ljc1IDAgMCAxLS42ODYgMHpNMSA4LjUxM0MxIDUuMDUzIDMuODI5IDIuNSA2LjczNiAyLjUgOS4wMyAyLjUgMTAuODgxIDMuNzI2IDEyIDUuNjA1IDEzLjEyIDMuNzI2IDE0Ljk3IDIuNSAxNy4yNjQgMi41IDIwLjE3IDIuNSAyMyA1LjA1MiAyMyA4LjUxNGMwIDMuODE4LTIuODAxIDcuMDYtNS4zODkgOS4yNjJhMzEgMzEgMCAwIDEtNS4yMzMgMy41NzZsLS4wMjUuMDEzLS4wMDcuMDAzLS4wMDIuMDAxLS4zNDQtLjY2Ni0uMzQzLjY2Ny0uMDAzLS4wMDItLjAwNy0uMDAzLS4wMjUtLjAxM0EyOSAyOSAwIDAgMSAxMCAyMC40MDhhMzEgMzEgMCAwIDEtMy42MTEtMi42MzJDMy44IDE1LjU3MyAxIDEyLjMzMiAxIDguNTE0eiIvPjwvc3ZnPg==")
+    center / contain no-repeat;
+  mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2M5NjE5OCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNi43MzYgNEM0LjY1NyA0IDIuNSA1Ljg4IDIuNSA4LjUxNGMwIDMuMTA3IDIuMzI0IDUuOTYgNC44NjEgOC4xMmEyOS43IDI5LjcgMCAwIDAgNC41NjYgMy4xNzVsLjA3My4wNDEuMDczLS4wNGMuMjcxLS4xNTMuNjYxLS4zOCAxLjEzLS42NzQuOTQtLjU4OCAyLjE5LTEuNDQxIDMuNDM2LTIuNTAyIDIuNTM3LTIuMTYgNC44NjEtNS4wMTMgNC44NjEtOC4xMkMyMS41IDUuODggMTkuMzQzIDQgMTcuMjY0IDRjLTIuMTA2IDAtMy44MDEgMS4zODktNC41NTMgMy42NDNhLjc1Ljc1IDAgMCAxLTEuNDIyIDBDMTAuNTM3IDUuMzg5IDguODQxIDQgNi43MzYgNE0xMiAyMC43MDNsLjM0My42NjdhLjc1Ljc1IDAgMCAxLS42ODYgMHpNMSA4LjUxM0MxIDUuMDUzIDMuODI5IDIuNSA2LjczNiAyLjUgOS4wMyAyLjUgMTAuODgxIDMuNzI2IDEyIDUuNjA1IDEzLjEyIDMuNzI2IDE0Ljk3IDIuNSAxNy4yNjQgMi41IDIwLjE3IDIuNSAyMyA1LjA1MiAyMyA4LjUxNGMwIDMuODE4LTIuODAxIDcuMDYtNS4zODkgOS4yNjJhMzEgMzEgMCAwIDEtNS4yMzMgMy41NzZsLS4wMjUuMDEzLS4wMDcuMDAzLS4wMDIuMDAxLS4zNDQtLjY2Ni0uMzQzLjY2Ny0uMDAzLS4wMDItLjAwNy0uMDAzLS4wMjUtLjAxM0EyOSAyOSAwIDAgMSAxMCAyMC40MDhhMzEgMzEgMCAwIDEtMy42MTEtMi42MzJDMy44IDE1LjU3MyAxIDEyLjMzMiAxIDguNTE0eiIvPjwvc3ZnPg==")
+    center / contain no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.donateButton:hover .donateHeart,
+.donateButton:focus-visible .donateHeart {
+  animation: heartBurst 0.6s ease-in-out infinite;
+}
+
+@keyframes heartBurst {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.35);
+  }
+  55% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .socialIcons {

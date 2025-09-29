@@ -1,60 +1,46 @@
-## Getting Started
+**Flokicoin Web**
 
-### Prerequisites
+- Official website for Flokicoin. Built with Next.js, statically exported to `out/`. Multilingual (EN, CN, RU).
+- Org: https://github.com/flokiorg/
 
-- Node.js >= 18
-- npm or yarn
+**Requirements**
+- Node.js 18+
+- Yarn 4 (preferred) or npm
 
-### Installation
-
-Clone the repository and install dependencies:
-
+**Install**
 ```bash
-git clone https://github.com/flokiorg/your-flokicoin-app.git
-cd your-flokicoin-app
-npm install
+git clone https://github.com/flokiorg/flokiorg-web
+cd flokiorg-web
+yarn install    # or: npm install
 ```
 
-### Development
-
-Start the development server:
-
+**Develop**
 ```bash
-npm run dev
+yarn dev        # or: npm run dev
+```
+Open http://localhost:3000
+
+**Build (static export)**
+```bash
+yarn build      # or: npm run build
+```
+Output: `out/` (configured via `next.config.js`).
+
+**Preview static build**
+```bash
+yarn serve      # serves ./out at http://localhost:3000
 ```
 
-Then open your browser at `http://localhost:3000`.
-
-### Build for Production
-
-To build the project for production:
-
+**Lint**
 ```bash
-npm run build
+yarn lint
 ```
 
-### Test Production Build Locally
+**Translations**
+- Edit `src/constants/translations/en.json` then mirror keys/links in `cn.json` and `ru.json`.
 
-After building, you can serve the static files using `serve`:
+**Contributing**
+- PRs welcome. Please keep changes small and focused.
 
-```bash
-npm run serve
-```
-
-This will start a server at `http://localhost:3000` serving the `out` directory.
-
-### Linting
-
-Run ESLint to check for code issues:
-
-```bash
-npm run lint
-```
-
-## Contributing
-
-Contributions are welcome. Please fork the repository and open a pull request with your changes.
-
-## License
-
-MIT License.
+**License**
+- MIT

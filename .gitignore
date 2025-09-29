@@ -43,3 +43,6 @@ pnpm-debug.log*
 # ------------------------------------
 coverage/
 jest-html-reporters-*.html
+
+# Local helper scripts
+commits.sh

@@ -2,7 +2,7 @@
 # 📦 Node / Yarn
 # ------------------------------------
 node_modules/
-.yarn
+.yarn/
 .next
 .wrangler
 

@@ -1,7 +1,6 @@
-**Flokicoin Web**
+**Flokicoin.org**
 
-- Official website for Flokicoin. Built with Next.js, statically exported to `out/`. Multilingual (EN, CN, RU).
-- Org: https://github.com/flokiorg/
+Online resources for the Flokicoin community.
 
 **Requirements**
 - Node.js 18+
@@ -11,24 +10,24 @@
 ```bash
 git clone https://github.com/flokiorg/flokiorg-web
 cd flokiorg-web
-yarn install    # or: npm install
+yarn install 
 ```
 
 **Develop**
 ```bash
-yarn dev        # or: npm run dev
+yarn dev
 ```
 Open http://localhost:3000
 
 **Build (static export)**
 ```bash
-yarn build      # or: npm run build
+yarn build
 ```
 Output: `out/` (configured via `next.config.js`).
 
 **Preview static build**
 ```bash
-yarn serve      # serves ./out at http://localhost:3000
+yarn serve
 ```
 
 **Lint**

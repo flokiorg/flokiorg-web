@@ -26,3 +26,12 @@
     display: none; // Supprime l'icône par défaut d'IE/Edge
   }
 }
+
+@media (max-width: 600px) {
+  .languageSwitcher {
+    .selectWithLabel {
+      font-size: 12px;
+      padding: 2px 6px;
+    }
+  }
+}

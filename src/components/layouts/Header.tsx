@@ -144,7 +144,9 @@ const Header = () => {
               </a>
             ))}
           </div>
-          <LanguageSwitcher />
+          <div className={styles.languageSwitcherWrapper}>
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
       </header>

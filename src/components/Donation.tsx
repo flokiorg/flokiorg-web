@@ -16,8 +16,7 @@ const Donation: React.FC<DonationProps> = ({ variant = "default" }) => {
   const { t, i18n } = useTranslation();
 
   const baseKey = variant === "ecosystem" ? "donationEcosystem" : "donation";
-  const sectionId =
-    variant === "ecosystem" ? "ecosystem-donation" : "donation";
+  const sectionId = variant === "ecosystem" ? "ecosystem" : "wof";
 
   const getOptionalString = (key: string): string =>
     i18n.exists(key) ? String(t(key)) : "";

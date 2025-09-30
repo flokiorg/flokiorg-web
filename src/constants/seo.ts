@@ -42,7 +42,7 @@ export const ROUTE_SEO: Record<string, SeoMetadata> = {
     canonicalPath: "/",
   },
   "/donate": {
-    title: "Support the Web of Fun | Flokicoin Donations",
+    title: "Support Flokicoin",
     description:
       "Help Flokicoin deliver the Web of Fun by funding open-source experiments, FEPs, and community-led initiatives.",
     canonicalPath: "/donate",

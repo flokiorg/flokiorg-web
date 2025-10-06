@@ -401,7 +401,19 @@
           { "label": "运行运营者", "link": "https://docs.flokicoin.org/lokichain#run-a-node" }
         ]
       },
-      { "title": "社区", "links": [ { "label": "资源", "link": "https://docs.flokicoin.org/resources" } ] }
+      { 
+        "title": "社区", 
+        "links": [ 
+          { "label": "资产", "link": "/assets" },
+          { "label": "资源", "link": "https://docs.flokicoin.org/resources" }
+
+        ] }
     ]
+  }
+  ,
+  "assets": {
+    "title": "素材",
+    "download": "下载",
+    "open": "打开"
   }
 }

@@ -127,7 +127,7 @@
 .navigation {
   display: none;
 
-  @media (min-width: 900px) {
+  @media (min-width: 1100px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,7 +165,7 @@
   min-width: 0;
   flex: 0 0 auto;
 
-  @media (min-width: 900px) {
+  @media (min-width: 1100px) {
     gap: clamp(12px, 1.5vw, 20px);
   }
 }

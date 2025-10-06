@@ -395,7 +395,18 @@
           { "label": "Запустить оператора", "link": "https://docs.flokicoin.org/lokichain#run-a-node" }
         ]
       },
-      { "title": "Сообщество", "links": [ { "label": "Ресурсы", "link": "https://docs.flokicoin.org/resources" } ] }
+      { "title": "Сообщество", 
+        "links": [
+          { "label": "Активы", "link": "/assets" }, 
+          { "label": "Ресурсы", "link": "https://docs.flokicoin.org/resources" }
+          
+        ] }
     ]
+  }
+  ,
+  "assets": {
+    "title": "Ассеты",
+    "download": "Скачать",
+    "open": "Открыть"
   }
 }

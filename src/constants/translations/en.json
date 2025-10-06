@@ -413,9 +413,17 @@
       {
         "title": "Community",
         "links": [
+          { "label": "Assets", "link": "/assets" },
           { "label": "Resources", "link": "https://docs.flokicoin.org/resources" }
+          
         ]
       }
     ]
+  }
+  ,
+  "assets": {
+    "title": "Assets",
+    "download": "Download",
+    "open": "Open"
   }
 }

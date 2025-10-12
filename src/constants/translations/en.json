@@ -265,44 +265,64 @@
     "title": "Terms of Use",
     "sections": [
       {
-        "title": "1. Acceptance of Terms",
-        "subtitle": "By accessing or using our platform, you agree to these terms.",
-        "description": "Your use of our services constitutes acceptance of these Terms of Use. If you do not agree, do not use the platform."
+        "title": "1. Scope and Maintainers",
+        "subtitle": "Community-managed open-source project",
+        "description": "These Terms of Use are published by contributors to the Flokicoin open-source community (\"Flokicoin\", \"we\", \"us\"). There is currently no incorporated Flokicoin foundation or dedicated legal team. By accessing Flokicoin.org, companion apps, or community tools, you acknowledge these terms and the community-led nature of the project. If you do not agree, discontinue use immediately."
       },
       {
-        "title": "2. Eligibility",
-        "subtitle": "You must meet the legal requirements.",
-        "description": "You must be at least 18 years old and legally capable of entering into agreements to use this platform. You are solely responsible for compliance with local laws."
+        "title": "2. Eligibility and Local Restrictions",
+        "subtitle": "Check your local rules before you participate",
+        "description": "You must be at least 18 years old and legally permitted to use decentralized digital asset services in your jurisdiction. Certain territories may restrict participation where virtual asset activity is illegal or requires registration. You are solely responsible for understanding and complying with laws that apply to you."
       },
       {
-        "title": "3. Wallet Responsibility",
-        "subtitle": "You are responsible for securing your wallet.",
-        "description": "We do not hold or manage private keys. You are solely responsible for your wallet credentials. Lost access to your wallet cannot be recovered by us."
+        "title": "3. Regulatory Classification",
+        "subtitle": "Flokicoin aligns with the 2025 treatment of decentralized virtual assets",
+        "description": "As of 2025, Flokicoin is treated in most jurisdictions as a decentralized virtual commodity similar to Bitcoin, not as legal tender. This status can change as regulators issue new guidance. You remain responsible for any securities, commodities, payments, consumer-protection, or tax obligations triggered by your activities. No central team monitors compliance on your behalf."
       },
       {
-        "title": "4. Prohibited Uses",
-        "subtitle": "Illegal activity is strictly forbidden.",
-        "description": "You may not use the platform for any unlawful, fraudulent, or harmful activities, including money laundering, terrorism financing, or violating any local or international laws."
+        "title": "4. Access and Prohibited Uses",
+        "subtitle": "Use the network responsibly",
+        "description": "You agree not to use the services for unlawful, fraudulent, or harmful purposes, including sanctions evasion, money laundering, terrorist financing, market manipulation, or distribution of malicious code. We may suspend or restrict access when required by law or if your activity threatens the safety of the community."
       },
       {
-        "title": "5. No Warranties",
-        "subtitle": "Use the platform at your own risk.",
-        "description": "The platform is provided 'as is' with no guarantees of availability, accuracy, or security. We disclaim all warranties to the maximum extent permitted by law."
+        "title": "5. Non-Custodial Services and Wallet Responsibility",
+        "subtitle": "You control your keys",
+        "description": "Flokicoin does not custody user assets. You are exclusively responsible for safeguarding private keys, seed phrases, and wallet credentials. Loss or compromise of your credentials may permanently prevent access to your assets. We cannot recover or re-issue private keys."
       },
       {
-        "title": "6. Limitation of Liability",
-        "subtitle": "We are not liable for any losses.",
-        "description": "We are not liable for direct, indirect, or consequential damages arising from the use of our platform, including loss of tokens, data, or access."
+        "title": "6. Taxes, Reporting, and Legal Obligations",
+        "subtitle": "Stay current with regulatory filings",
+        "description": "You must determine, collect, report, and remit any taxes or declarations arising from your use of Flokicoin. Virtual asset transactions may trigger income, capital gains, VAT, GST, or other obligations in your country. We do not provide tax, accounting, or legal advice."
       },
       {
-        "title": "7. Modifications to Terms",
-        "subtitle": "We may update these terms.",
-        "description": "We reserve the right to modify these Terms of Use at any time. Updates will be posted on the site, and continued use implies acceptance of the revised terms."
+        "title": "7. Market Conduct and Governance",
+        "subtitle": "Follow fair-use rules",
+        "description": "When contributing to the Flokicoin ecosystem—such as submitting proposals, participating in governance, or interacting with markets—you must comply with anti-market abuse, insider trading, and fair disclosure standards applicable in your jurisdiction."
       },
       {
-        "title": "8. Governing Law",
-        "subtitle": "Legal jurisdiction",
-        "description": "These terms are governed by and construed in accordance with the laws of the jurisdiction in which our organization operates, unless stated otherwise."
+        "title": "8. Risk Disclosure",
+        "subtitle": "Digital assets are volatile and can fail",
+        "description": "Participating in mining, holding, staking, or transacting with Flokicoin involves substantial risk, including the possible loss of all value. Prices can swing quickly, markets may lack liquidity, bridges and third-party services can fail, and protocol bugs or attacks may disrupt the network. Engage only if you fully understand these risks."
+      },
+      {
+        "title": "9. Regulatory Awareness",
+        "subtitle": "Stay informed about jurisdiction-specific rules",
+        "description": "Regulators across the EU (MiCA), United States, United Kingdom, Asia-Pacific, Middle East, Africa, and Latin America continue to refine virtual asset regimes. Because Flokicoin has no central compliance office, you must track local licensing, reporting, or consumer-protection requirements that apply to your activities."
+      },
+      {
+        "title": "10. Financial Crime Controls",
+        "subtitle": "Adopt your own AML and KYC safeguards",
+        "description": "Flokicoin does not onboard customers or run custodial services, but ecosystem contributors are expected to apply proportionate anti-money laundering, counter-terrorist financing, and sanctions screening practices when relevant. If you build products on Flokicoin, implement due diligence, record retention, and suspicious activity reporting obligations appropriate to your jurisdiction."
+      },
+      {
+        "title": "11. Security Practices and Responsible Disclosure",
+        "subtitle": "Protect your keys and report issues responsibly",
+        "description": "Secure your wallets with hardware devices, verify URLs, and stay alert for phishing. The community follows peer review, audits, and monitoring best practices, yet no control eliminates risk. Report suspected vulnerabilities to security@flokicoin.org so volunteers can coordinate fixes before public disclosure."
+      },
+      {
+        "title": "12. Updates and Contact",
+        "subtitle": "Community-governed changes",
+        "description": "These terms may change as the community adapts to new regulations or technical developments. Updates will be posted with a revised effective date, and continued use signifies acceptance. For general questions, reach out via contact@flokicoin.org or the official Discord—responses are handled by volunteers."
       }
     ]
   },
@@ -310,39 +330,54 @@
     "title": "Privacy Policy",
     "sections": [
       {
-        "title": "1. Information Collection",
-        "subtitle": "What we collect and why",
-        "description": "We collect minimal data such as IP addresses, browser types, and site usage analytics to maintain and improve platform performance."
+        "title": "1. On-chain Transparency",
+        "subtitle": "Public blockchain activity is outside our control",
+        "description": "Transactions, wallet addresses, and smart contract interactions recorded on-chain are public and immutable. We cannot alter, delete, or control how third parties access that information."
       },
       {
-        "title": "2. On-chain Data",
-        "subtitle": "Blockchain transparency",
-        "description": "Blockchain data, including wallet addresses and transactions, is publicly available and outside our control. We do not collect or manage on-chain data."
+        "title": "2. Cookies and Analytics",
+        "subtitle": "How we use Google Analytics and similar tools",
+        "description": "We use functional cookies and Google Analytics to understand aggregate site usage, detect errors, and improve performance. Where required, we request consent before setting non-essential cookies. You can manage or revoke consent through your browser settings or the cookie preference banner, and we do not attempt to combine analytics data with personally identifiable information."
       },
       {
-        "title": "3. Cookies & Analytics",
-        "subtitle": "How we use cookies",
-        "description": "We use cookies and third-party analytics tools like Google Analytics to understand how users interact with the site. You may disable cookies in your browser settings."
+        "title": "3. How We Use Data",
+        "subtitle": "Operating, improving, and securing our services",
+        "description": "Collected data helps us deliver content, monitor platform health, detect abuse, communicate updates, and comply with legal obligations. We do not sell personal data."
       },
       {
-        "title": "4. Third-party Services",
-        "subtitle": "External tools and integrations",
-        "description": "We may use third-party services for communication, hosting, or analytics. These services may collect information as governed by their own privacy policies."
+        "title": "4. International Transfers",
+        "subtitle": "Global infrastructure means cross-border processing",
+        "description": "We may store and process information in the European Union, United States, or other countries where we or our service providers operate. When required by law, we implement safeguards such as Standard Contractual Clauses."
       },
       {
-        "title": "5. User Rights",
-        "subtitle": "Access and control",
-        "description": "You may request access to or deletion of your off-chain personal data. On-chain data cannot be altered or deleted due to its immutable nature."
+        "title": "5. Data Retention",
+        "subtitle": "How long we keep information",
+        "description": "We retain analytics and support records only as long as needed for the purposes described or to meet regulatory requirements. Aggregated or anonymized data may be kept longer for research and security."
       },
       {
-        "title": "6. Data Security",
-        "subtitle": "Protecting your information",
-        "description": "We take reasonable technical measures to secure the data we collect, but no system can guarantee complete security."
+        "title": "6. Security Measures",
+        "subtitle": "Protecting the data we hold",
+        "description": "We apply administrative, organizational, and technical safeguards such as access controls, encryption in transit, and vulnerability monitoring. No internet service is completely secure, so exercise caution when sharing information."
       },
       {
-        "title": "7. Policy Updates",
-        "subtitle": "Changes to this policy",
-        "description": "We may revise this Privacy Policy from time to time. Changes will be posted on this page, and your continued use of the platform implies acceptance."
+        "title": "7. Your Rights",
+        "subtitle": "Control over your personal information",
+        "description": "Subject to local laws, you may request access, correction, deletion, portability, or restriction of your off-chain personal data. Send requests to contact@flokicoin.org with proof of identity. On-chain data cannot be modified, and responses are provided on a best-effort basis by community volunteers."
+      },
+      {
+        "title": "8. Contact and Complaints",
+        "subtitle": "How to reach us or regulators",
+        "description": "If you have privacy questions, email contact@flokicoin.org or join the official Discord. There is no dedicated legal team, so please allow time for a volunteer response. You may also lodge a complaint with your local data protection authority if you believe our handling of your data violates applicable law."
+      },
+      {
+        "title": "9. Updates",
+        "subtitle": "Staying current with privacy requirements",
+        "description": "We review this Privacy Policy periodically to reflect new legal guidance, service updates, and community feedback. Material changes will be announced on this page with a revised effective date."
+      },
+      {
+        "title": "10. Information We Collect",
+        "subtitle": "What data we receive and our purposes",
+        "description": "We collect minimal off-chain data, such as IP address, browser type, device information, referring URLs, and usage metrics needed to operate and secure Flokicoin.org, community portals, and developer tools."
       }
     ]
   },
@@ -369,11 +404,10 @@
         ]
       },
       {
-        "title": "Privacy & Terms",
+        "title": "Legal",
         "links": [
-          { "label": "Terms of Use", "link": "/terms" },
-          { "label": "Privacy Policy", "link": "/privacy" },
-          { "label": "Contact Us", "link": "mailto:contact@flokicoin.org" }
+          { "label": "Terms", "link": "/terms" },
+          { "label": "Privacy Notice", "link": "/privacy" }
         ]
       },
       {

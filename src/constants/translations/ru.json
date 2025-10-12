@@ -369,14 +369,10 @@
         ]
       },
       {
-        "title": "Политика и условия",
+        "title": "Legal",
         "links": [
-          { "label": "Условия использования", "link": "/terms" },
-          { "label": "Политика конфиденциальности", "link": "/privacy" },
-          {
-            "label": "Связаться с нами",
-            "link": "mailto:contact@flokicoin.org"
-          }
+          { "label": "Terms", "link": "/terms" },
+          { "label": "Privacy Notice", "link": "/privacy" }
         ]
       },
       {

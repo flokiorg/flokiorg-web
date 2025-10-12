@@ -369,11 +369,10 @@
         ]
       },
       {
-        "title": "隐私与条款",
+        "title": "Legal",
         "links": [
-          { "label": "使用条款", "link": "/terms" },
-          { "label": "隐私政策", "link": "/privacy" },
-          { "label": "联系我们", "link": "mailto:contact@flokicoin.org" }
+          { "label": "Terms", "link": "/terms" },
+          { "label": "Privacy Notice", "link": "/privacy" }
         ]
       },
       {

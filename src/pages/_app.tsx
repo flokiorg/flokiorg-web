@@ -3,10 +3,10 @@ import "@styles/scss/globals.scss";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "@components/layouts/Header";
 import Footer from "@components/layouts/Footer";
-import "@utils/i18n";
+import i18n from "@utils/i18n";
 import { throwErrorIfEnvVarsNotFound } from "@utils/ConfigUtils";
 
 const App = (props: AppProps) => {

@@ -24,6 +24,7 @@ export const ASSETS: AssetItem[] = [
   { title: "Flokicoin 512x512", link: "/assets/flokicoin-512x512.png", height: 512, width: 512 },
   { title: "Flokicoin 256x256", link: "/assets/flokicoin-256x256.png", height: 256, width: 256 },
   { title: "Flokicoin 200x200", link: "/assets/flokicoin-200x200.png", height: 200, width: 200 },
+  { title: "Flokicoin 150x150", link: "/assets/flokicoin-150x150.png", height: 150, width: 150 },
   { title: "Flokicoin 128x128", link: "/assets/flokicoin-128x128.png", height: 128, width: 128 },
   { title: "Flokicoin 64x64", link: "/assets/flokicoin-64x64.png", height: 64, width: 64 },
   { title: "Flokicoin 48x48", link: "/assets/flokicoin-48x48.png", height: 48, width: 48 },

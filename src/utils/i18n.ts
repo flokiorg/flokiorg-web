@@ -14,6 +14,7 @@ i18n
       ru: { translation: ru },
       cn: { translation: cn },
     },
+    lng: "en",
     fallbackLng: "en",
     supportedLngs: ["en", "ru", "cn"],
     detection: {

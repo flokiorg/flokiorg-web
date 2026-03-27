@@ -1,15 +1,15 @@
 {
   "header": {
     "announcement": {
-      "message": "Lokiwiki is live. Your Flokicoin Knowledge Source.",
-      "ctaLabel": "探索 Lokiwiki",
-      "link": "https://docs.flokicoin.org"
+      "message": "Lokihub 已上线。您的自托管闪电网络枢纽。",
+      "ctaLabel": "探索 Lokihub",
+      "link": "https://docs.flokicoin.org/lokihub/"
     },
     "menu": [
       { "label": "关于", "link": "#about" },
       { "label": "里程碑", "link": "#milestones" },
       { "label": "钱包", "link": "#wallets" },
-      { "label": "区块浏览器", "link": "https://flokichain.info" },
+      { "label": "浏览器", "link": "#wallets" },
       { "label": "主题", "link": "#topics" },
       { "label": "文档", "link": "https://docs.flokicoin.org" },
       { "label": "常见问题", "link": "#faq" }
@@ -163,20 +163,55 @@
     ]
   },
   "wallets": {
+    "sectionLabel": "钱包",
+    "title": "存储与监控",
     "cards": [
       {
-        "title": "tWallet",
-        "button": "下载",
-        "description": "使用我们简单、安全、用户友好的钱包存储、发送和接收您的数字资产，设计简洁，安心无忧。",
-        "link": "https://docs.flokicoin.org/wallets/twallet/v1#install"
+        "title": "钱包",
+        "description": "通过我们推荐的非托管方案，轻松存储、发送和接收数字资产。",
+        "button": "选择钱包",
+        "links": [
+          {
+            "label": "tWallet",
+            "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
+            "tag": "推荐"
+          },
+          {
+            "label": "Komodo 钱包",
+            "url": "https://app.komodoplatform.com/wallet"
+          }
+        ]
       },
       {
         "title": "区块浏览器",
-        "button": "探索",
-        "description": "跟踪区块和交易，检查钱包余额，实时了解挖矿指标和网络活动等。",
-        "link": "https://flokichain.info"
+        "description": "实时监控网络，全面透明地跟踪两套链上的区块、交易及网络指标。",
+        "button": "选择浏览器",
+        "links": [
+          {
+            "label": "Lokichain 浏览器",
+            "url": "https://lokichain.info"
+          },
+          {
+            "label": "Flokichain 浏览器",
+            "url": "https://flokichain.info"
+          }
+        ]
       }
     ]
+  },
+  "lokihub": {
+    "title1": "为 Flokicoin 闪电网络注入全新动力",
+    "title2": "尽在 Lokihub",
+    "tagline": "自托管闪电网络枢纽",
+    "description": "Lokihub 是 Flokicoin 闪电网络的控制中心。管理通道、路由支付和连接应用 —— 无需交出私钥。",
+    "features": [
+      "通过 LSP 获取即时入站和出站流动性",
+      "创建和管理多个子钱包",
+      "开启、关闭和监控闪电通道",
+      "通过 NWC 无缝连接任何应用"
+    ],
+    "button": "探索 Lokihub",
+    "link": "https://docs.flokicoin.org/lokihub/"
   },
   "faq": {
     "sectionTag": "常见问题",

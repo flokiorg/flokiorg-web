@@ -1,15 +1,15 @@
 {
   "header": {
     "announcement": {
-      "message": "Lokiwiki is live. Your Flokicoin Knowledge Source.",
-      "ctaLabel": "Изучить Lokiwiki",
-      "link": "https://docs.flokicoin.org"
+      "message": "Lokihub уже здесь. Ваш некастодиальный Lightning-хаб.",
+      "ctaLabel": "Изучить Lokihub",
+      "link": "https://docs.flokicoin.org/lokihub/"
     },
     "menu": [
       { "label": "О проекте", "link": "#about" },
       { "label": "Этапы", "link": "#milestones" },
       { "label": "Кошелек", "link": "#wallets" },
-      { "label": "Обозреватель", "link": "https://flokichain.info" },
+      { "label": "Обозреватели", "link": "#wallets" },
       { "label": "Темы", "link": "#topics" },
       { "label": "Документы", "link": "https://docs.flokicoin.org" },
       { "label": "Вопросы", "link": "#faq" }
@@ -163,20 +163,55 @@
     ]
   },
   "wallets": {
+    "sectionLabel": "Кошельки",
+    "title": "Храните и отслеживайте",
     "cards": [
       {
-        "title": "tWallet",
-        "button": "СКАЧАТЬ",
-        "description": "Храните, отправляйте и получайте цифровые активы с помощью простого, безопасного и удобного кошелька.",
-        "link": "https://docs.flokicoin.org/wallets/twallet/v1#install"
+        "title": "Кошельки",
+        "description": "Храните, отправляйте и получайте цифровые активы без усилий с нашими рекомендованными некастодиальными решениями.",
+        "button": "Выбрать кошелек",
+        "links": [
+          {
+            "label": "tWallet",
+            "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
+            "tag": "Рекомендуем"
+          },
+          {
+            "label": "Komodo Wallet",
+            "url": "https://app.komodoplatform.com/wallet"
+          }
+        ]
       },
       {
-        "title": "Обозреватель",
-        "button": "ИССЛЕДОВАТЬ",
-        "description": "Отслеживайте блоки и транзакции, проверяйте балансы и показатели сети в реальном времени.",
-        "link": "https://flokichain.info"
+        "title": "Обозреватели",
+        "description": "Отслеживайте блоки, транзакции и получайте обновления метрик сети в реальном времени.",
+        "button": "Выбрать обозреватель",
+        "links": [
+          {
+            "label": "Локальная сеть (Lokichain)",
+            "url": "https://lokichain.info"
+          },
+          {
+            "label": "Основная сеть (Flokichain)",
+            "url": "https://flokichain.info"
+          }
+        ]
       }
     ]
+  },
+  "lokihub": {
+    "title1": "Прокачайте Flokicoin Lightning Network",
+    "title2": "с помощью Lokihub",
+    "tagline": "Некастодиальный Lightning-хаб",
+    "description": "Lokihub — это центр управления Flokicoin Lightning Network. Управляйте каналами, маршрутизируйте платежи и подключайте приложения — не отдавая свои ключи.",
+    "features": [
+      "Мгновенная входящая и исходящая ликвидность через LSP",
+      "Создание и управление несколькими субкошельками",
+      "Открытие, закрытие и мониторинг Lightning-каналов",
+      "Подключение любого приложения через NWC"
+    ],
+    "button": "Изучить Lokihub",
+    "link": "https://docs.flokicoin.org/lokihub/"
   },
   "faq": {
     "sectionTag": "Часто задаваемые вопросы",

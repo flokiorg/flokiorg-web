@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "@components/common/LanguageSwitcher";
 import styles from "@styles/scss/Header.module.scss";
+
+const SCROLL_DELTA = 10; // minimum scroll distance to trigger hide/show
+const SCROLL_TOP_THRESHOLD = 100; // always show header when near the top
 
 const Header = () => {
   const { t } = useTranslation();
@@ -29,6 +32,39 @@ const Header = () => {
   const showAnnouncement = Boolean(message && ctaLabel && link);
   const announcementRef = useRef<HTMLDivElement | null>(null);
 
+  // --- Smart scroll: hide on scroll-down, reveal on scroll-up ---
+  const [hidden, setHidden] = useState(false);
+  const prevScrollY = useRef(0);
+
+  const handleScroll = useCallback(() => {
+    const currentY = window.scrollY;
+
+    // Always show when near the top of the page
+    if (currentY <= SCROLL_TOP_THRESHOLD) {
+      setHidden(false);
+      prevScrollY.current = currentY;
+      return;
+    }
+
+    const delta = currentY - prevScrollY.current;
+
+    if (delta > SCROLL_DELTA) {
+      // Scrolling DOWN → hide
+      setHidden(true);
+      prevScrollY.current = currentY;
+    } else if (delta < -SCROLL_DELTA) {
+      // Scrolling UP → show
+      setHidden(false);
+      prevScrollY.current = currentY;
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
+  // --- Announcement bar height CSS variable ---
   useEffect(() => {
     if (!showAnnouncement) {
       document.documentElement.style.removeProperty("--announcement-height");
@@ -72,8 +108,15 @@ const Header = () => {
     }
   };
 
+  const wrapperClassName = [
+    styles.headerWrapper,
+    hidden ? styles.headerHidden : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
-    <>
+    <div className={wrapperClassName}>
       {showAnnouncement && (
         <div ref={announcementRef} className={styles.announcementBar}>
           <div className={styles.announcementInner}>
@@ -150,7 +193,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 

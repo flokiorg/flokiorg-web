@@ -10,6 +10,35 @@
   padding: 0 30px;
 }
 
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionBadge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(208, 151, 15, 0.1);
+  color: #d0970f;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+
+  @media screen and (max-width: 900px) {
+    font-size: 36px;
+  }
+}
+
 .cardGrid {
   display: flex;
   flex-wrap: wrap;
@@ -22,6 +51,12 @@
   border-radius: 11px;
   position: relative;
   background-color: #0c0c0c;
+  overflow: visible;
+  z-index: 1;
+}
+
+.cardWrapperActive {
+  z-index: 10;
 }
 
 .card {
@@ -30,9 +65,9 @@
   background-color: #0c0c0c;
   border: 1px solid #2b2b2b;
   display: flex;
-  align-items: flex-start;
-  gap: 30px;
+  flex-direction: column;
   position: relative;
+  height: 100%;
 
   &::before {
     content: '';
@@ -61,18 +96,20 @@
 .cardContent {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .cardHeader {
-  display: flex;
-  flex-direction: column;
-  min-width: 150px;
+  margin-bottom: 24px;
 }
 
 .cardTitle {
-  font-size: 45px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 500;
   color: #d0970f;
+  margin-bottom: 12px;
 }
 
 .cardButton {
@@ -104,6 +141,72 @@
   flex: 1;
 }
 
+.cardActions {
+  margin-top: auto; // Push to bottom
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 100%;
+  white-space: nowrap;
+  background: #151515;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdownItem {
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #2a2a2a;
+    color: #d0970f;
+  }
+  
+  &:not(:last-child) {
+    border-bottom: 1px solid #2b2b2b;
+  }
+}
+
+.dropdownTag {
+  margin-left: 8px;
+  padding: 2px 8px;
+  background: rgba(208, 151, 15, 0.15);
+  color: #d0970f;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 // Responsive
 @media screen and (max-width: 900px) {
   .cardWrapper {
@@ -118,6 +221,8 @@
     align-items: flex-start;
     min-width: auto;
   }
+
+
 
   .cardButton {
     width: 100%;

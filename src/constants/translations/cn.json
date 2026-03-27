@@ -30,6 +30,11 @@
         "name": "Github",
         "icon": "/img/github.png",
         "link": "https://github.com/flokiorg"
+      },
+      {
+        "name": "Nostr",
+        "icon": "/img/nostr.svg",
+        "link": "https://njump.me/nprofile1qqsvj806upqwfsqaza7lar7c2dmj2ey3f8r8p93kags5zvvl3cet3ygnn7h5f"
       }
     ],
     "langs": [
@@ -293,6 +298,11 @@
         "name": "GitHub",
         "icon": "/img/github.png",
         "link": "https://github.com/flokiorg"
+      },
+      {
+        "name": "Nostr",
+        "icon": "/img/nostr.svg",
+        "link": "https://njump.me/nprofile1qqsvj806upqwfsqaza7lar7c2dmj2ey3f8r8p93kags5zvvl3cet3ygnn7h5f"
       }
     ]
   },
@@ -400,6 +410,11 @@
             "icon": "/img/github.png",
             "label": "GitHub",
             "link": "https://github.com/flokiorg"
+          },
+          {
+            "icon": "/img/nostr.svg",
+            "label": "Nostr",
+            "link": "https://njump.me/nprofile1qqsvj806upqwfsqaza7lar7c2dmj2ey3f8r8p93kags5zvvl3cet3ygnn7h5f"
           }
         ]
       },

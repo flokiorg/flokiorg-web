@@ -1,15 +1,15 @@
 {
   "header": {
     "announcement": {
-      "message": "Lokiwiki is live. Your Flokicoin Knowledge Source.",
-      "ctaLabel": "Explore Lokiwiki",
-      "link": "https://docs.flokicoin.org"
+      "message": "Lokihub is live. Your self-custodial Lightning hub.",
+      "ctaLabel": "Explore Lokihub",
+      "link": "https://docs.flokicoin.org/lokihub/"
     },
     "menu": [
       { "label": "About", "link": "#about" },
       { "label": "Milestones", "link": "#milestones" },
-      { "label": "Wallet", "link": "#wallets" },
-      { "label": "Explorer", "link": "https://flokichain.info" },
+      { "label": "Wallets", "link": "#wallets" },
+      { "label": "Explorers", "link": "#wallets" },
       { "label": "Topics", "link": "#topics" },
       { "label": "Docs", "link": "https://docs.flokicoin.org" },
       { "label": "FAQ", "link": "#faq" }
@@ -77,7 +77,7 @@
       "We should take back ownership."
     ],
     "imageTitle": "The next web is transforming energy into shared value and returning ownership to its source.",
-    "imageSubtitle": " The Book of WOF recording this shift.",
+    "imageSubtitle": " The Book of WoF recording this shift.",
     "buttonLabel": "Donate Now",
     "secondButtonLabel": "WoF Paper",
     "wofpaperUrl": "https://docs.flokicoin.org/wof"
@@ -163,20 +163,55 @@
     ]
   },
   "wallets": {
+    "sectionLabel": "Wallets",
+    "title": "Store & Monitor",
     "cards": [
       {
-        "title": "tWallet",
-        "button": "DOWNLOAD",
-        "description": "Store, send, and receive your digital assets with our simple, secure, and user-friendly wallet, designed for simplicity and peace of mind.",
-        "link": "https://docs.flokicoin.org/wallets/twallet/v1#install"
+        "title": "Wallets",
+        "description": "Store, send, and receive digital assets effortlessly with our recommended non-custodial options.",
+        "button": "Select Wallet",
+        "links": [
+          {
+            "label": "tWallet",
+            "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
+            "tag": "Recommended"
+          },
+          {
+            "label": "Komodo Wallet",
+            "url": "https://app.komodoplatform.com/wallet"
+          }
+        ]
       },
       {
-        "title": "Explorer",
-        "button": "EXPLORE",
-        "description": "Track blocks and transactions, check wallet balances, stay updated on mining metrics and network activity in real-time, and more.",
-        "link": "https://flokichain.info"
+        "title": "Explorers",
+        "description": "Monitor the network in real-time. Track blocks, transactions, and network metrics with full transparency across both chains.",
+        "button": "Select Explorer",
+        "links": [
+          {
+            "label": "Lokichain Explorer",
+            "url": "https://lokichain.info"
+          },
+          {
+            "label": "Flokichain Explorer",
+            "url": "https://flokichain.info"
+          }
+        ]
       }
     ]
+  },
+  "lokihub": {
+    "title1": "Supercharge the Flokicoin Lightning Network",
+    "title2": "with Lokihub",
+    "tagline": "Self-Custodial Lightning Hub",
+    "description": "Lokihub is the command center for the Flokicoin Lightning Network. Manage channels, route payments, and connect apps — all without handing over your keys.",
+    "features": [
+      "Instant inbound & outbound liquidity via LSP",
+      "Create and manage multiple sub-wallets",
+      "Open, close, and monitor Lightning channels",
+      "Connect any app seamlessly with NWC"
+    ],
+    "button": "Discover Lokihub",
+    "link": "https://docs.flokicoin.org/lokihub/"
   },
   "faq": {
     "sectionTag": "Faq",

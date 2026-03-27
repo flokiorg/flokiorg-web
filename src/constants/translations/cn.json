@@ -439,7 +439,7 @@
         "title": "社区", 
         "links": [ 
           { "label": "资产", "link": "/assets" },
-          { "label": "资源", "link": "https://docs.flokicoin.org/resources" }
+          { "label": "资源", "link": "https://docs.flokicoin.org/lokihub/resources" }
 
         ] }
     ]

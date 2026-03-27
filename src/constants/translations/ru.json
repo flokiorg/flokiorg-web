@@ -429,7 +429,7 @@
       { "title": "Сообщество", 
         "links": [
           { "label": "Активы", "link": "/assets" }, 
-          { "label": "Ресурсы", "link": "https://docs.flokicoin.org/resources" }
+          { "label": "Ресурсы", "link": "https://docs.flokicoin.org/lokihub/resources" }
           
         ] }
     ]

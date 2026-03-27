@@ -4,8 +4,8 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 import React from "react";
-import Header from "@components/layouts/Header";
 import Footer from "@components/layouts/Footer";
+import Header from "@components/layouts/Header";
 import "@utils/i18n";
 import { throwErrorIfEnvVarsNotFound } from "@utils/ConfigUtils";
 
@@ -17,10 +17,19 @@ const App = (props: AppProps) => {
   return (
     <>
       <Head>
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-96x96.png"
+          sizes="96x96"
+        />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
         <meta name="apple-mobile-web-app-title" content="Flokicoin" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>

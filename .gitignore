@@ -46,3 +46,6 @@ jest-html-reporters-*.html
 
 # Local helper scripts
 commits.sh
+commit.sh
+.agents
+skills-lock.json

@@ -1,9 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import {
-  DONATION_WOF_URL,
-  DONATION_ECOSYSTEM_URL,
-} from "@constants/config";
+import { DONATION_ECOSYSTEM_URL, DONATION_WOF_URL } from "@constants/config";
 import styles from "@styles/scss/Donations.module.scss";
 
 type DonationVariant = "default" | "ecosystem";
@@ -49,13 +46,13 @@ const Donation: React.FC<DonationProps> = ({ variant = "default" }) => {
     getOptionalString(`${baseKey}.buttonUrl`) || defaultButtonUrl;
 
   const secondaryButtonLabel = getOptionalString(
-    `${baseKey}.secondButtonLabel`
+    `${baseKey}.secondButtonLabel`,
   );
   const secondaryButtonUrl =
     getOptionalString(`${baseKey}.secondButtonUrl`) ||
     getOptionalString(`${baseKey}.wofpaperUrl`);
   const hasSecondaryButton = Boolean(
-    secondaryButtonLabel && secondaryButtonUrl
+    secondaryButtonLabel && secondaryButtonUrl,
   );
 
   return (

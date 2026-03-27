@@ -2,21 +2,21 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 import {
-  DEFAULT_AUTHOR,
-  DEFAULT_DESCRIPTION,
-  DEFAULT_IMAGE_PATH,
-  DEFAULT_IMAGE_ALT,
-  DEFAULT_IMAGE_WIDTH,
-  DEFAULT_IMAGE_HEIGHT,
-  DEFAULT_IMAGE_TYPE,
-  DEFAULT_KEYWORDS,
-  DEFAULT_TITLE,
-  SITE_NAME,
-  TWITTER_HANDLE,
   buildCanonicalUrl,
   canonicalisePath,
+  DEFAULT_AUTHOR,
+  DEFAULT_DESCRIPTION,
+  DEFAULT_IMAGE_ALT,
+  DEFAULT_IMAGE_HEIGHT,
+  DEFAULT_IMAGE_PATH,
+  DEFAULT_IMAGE_TYPE,
+  DEFAULT_IMAGE_WIDTH,
+  DEFAULT_KEYWORDS,
+  DEFAULT_TITLE,
   resolveUrl,
   SeoMetadata,
+  SITE_NAME,
+  TWITTER_HANDLE,
 } from "@constants/seo";
 
 type Props = SeoMetadata;
@@ -35,9 +35,7 @@ const SeoHead: React.FC<Props> = ({
   keywords,
 }) => {
   const router = useRouter();
-  const effectivePath = canonicalisePath(
-    canonicalPath || router.asPath || "/",
-  );
+  const effectivePath = canonicalisePath(canonicalPath || router.asPath || "/");
   const canonicalUrl = buildCanonicalUrl(effectivePath);
   const pageTitle = title || DEFAULT_TITLE;
   const pageDescription = description || DEFAULT_DESCRIPTION;

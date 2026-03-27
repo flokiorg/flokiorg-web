@@ -100,55 +100,55 @@ const Header = () => {
             </Link>
           </div>
 
-        <nav className={styles.navigation}>
-          {menu.map((nav: any, i: number) =>
-            nav.link.startsWith("http") ? (
-              <a
-                key={i}
-                href={nav.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {nav.label}
-              </a>
-            ) : (
-              <a key={i} href={nav.link} onClick={handleNavClick(nav.link)}>
-                {nav.label}
-              </a>
-            ),
-          )}
-        </nav>
+          <nav className={styles.navigation}>
+            {menu.map((nav: any, i: number) =>
+              nav.link.startsWith("http") ? (
+                <a
+                  key={i}
+                  href={nav.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {nav.label}
+                </a>
+              ) : (
+                <a key={i} href={nav.link} onClick={handleNavClick(nav.link)}>
+                  {nav.label}
+                </a>
+              ),
+            )}
+          </nav>
 
-        <div className={styles.rightSideContent}>
-          <Link href="/donate" legacyBehavior>
-            <a className={styles.donateButton}>
-              <span className={styles.donateHeart} aria-hidden="true" />
-              {t("header.donateLabel")}
-            </a>
-          </Link>
-          <div className={styles.socialIcons}>
-            {socials.map((social: any, i: number) => (
-              <a
-                key={i}
-                href={social.link}
-                target="_blank"
-                className="no-external-icon"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={social.icon}
-                  alt={social.name}
-                  width={social.width || 16}
-                  height={16}
-                />
+          <div className={styles.rightSideContent}>
+            <Link href="/donate" legacyBehavior>
+              <a className={styles.donateButton}>
+                <span className={styles.donateHeart} aria-hidden="true" />
+                {t("header.donateLabel")}
               </a>
-            ))}
-          </div>
-          <div className={styles.languageSwitcherWrapper}>
-            <LanguageSwitcher />
+            </Link>
+            <div className={styles.socialIcons}>
+              {socials.map((social: any, i: number) => (
+                <a
+                  key={i}
+                  href={social.link}
+                  target="_blank"
+                  className="no-external-icon"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={social.icon}
+                    alt={social.name}
+                    width={social.width || 16}
+                    height={16}
+                  />
+                </a>
+              ))}
+            </div>
+            <div className={styles.languageSwitcherWrapper}>
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
-      </div>
       </header>
     </>
   );

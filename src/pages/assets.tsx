@@ -1,9 +1,9 @@
 import React from "react";
-import SeoHead from "@components/common/SeoHead";
-import AssetCard from "@components/common/AssetCard";
-import { ASSETS } from "@constants/config";
-import styles from "@styles/scss/AssetsPage.module.scss";
 import { useTranslation } from "react-i18next";
+import { ASSETS } from "@constants/config";
+import AssetCard from "@components/common/AssetCard";
+import SeoHead from "@components/common/SeoHead";
+import styles from "@styles/scss/AssetsPage.module.scss";
 
 const AssetsPage: React.FC = () => {
   const { t } = useTranslation();

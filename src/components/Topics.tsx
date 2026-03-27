@@ -41,7 +41,9 @@ const Topics = () => {
                 <div className={styles.cardContent}>
                   <div className={styles.cardTitle}>{topic.title}</div>
                   {topic.description && (
-                    <p className={styles.cardDescription}>{topic.description}</p>
+                    <p className={styles.cardDescription}>
+                      {topic.description}
+                    </p>
                   )}
                 </div>
               </a>

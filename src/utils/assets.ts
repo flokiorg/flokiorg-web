@@ -7,7 +7,12 @@ export const formatBytes = (bytes: number | null): string => {
 
 export const getExtension = (url: string): string | null => {
   try {
-    const u = new URL(url, typeof window !== "undefined" ? window.location.origin : "http://localhost");
+    const u = new URL(
+      url,
+      typeof window !== "undefined"
+        ? window.location.origin
+        : "http://localhost",
+    );
     const pathname = u.pathname.toLowerCase();
     const match = pathname.match(/\.([a-z0-9]+)$/);
     return match ? match[1] : null;
@@ -19,10 +24,15 @@ export const getExtension = (url: string): string | null => {
 
 export const isImageExt = (ext: string | null) => {
   if (!ext) return false;
-  return ["png", "jpg", "jpeg", "gif", "webp", "svg", "bmp", "avif"].includes(ext);
+  return ["png", "jpg", "jpeg", "gif", "webp", "svg", "bmp", "avif"].includes(
+    ext,
+  );
 };
 
-export const classifyShape = (w: number | null, h: number | null): "full" | "square" | "rect" => {
+export const classifyShape = (
+  w: number | null,
+  h: number | null,
+): "full" | "square" | "rect" => {
   if (!w || !h || w <= 0 || h <= 0) return "rect";
   const r = w / h;
   if (r >= 2) return "full";
@@ -30,7 +40,10 @@ export const classifyShape = (w: number | null, h: number | null): "full" | "squ
   return "rect";
 };
 
-export const normalizeType = (raw: string | null, ext: string | null): string | null => {
+export const normalizeType = (
+  raw: string | null,
+  ext: string | null,
+): string | null => {
   const upperExt = ext ? ext.toUpperCase() : null;
   if (!raw && upperExt) {
     if (upperExt === "JPEG") return "JPG";
@@ -51,7 +64,10 @@ export const normalizeType = (raw: string | null, ext: string | null): string | 
   return t;
 };
 
-export const sanitizeTitle = (title: string, extUpper?: string | null): string => {
+export const sanitizeTitle = (
+  title: string,
+  extUpper?: string | null,
+): string => {
   let clean = title;
   if (extUpper && extUpper.length) {
     const e = extUpper.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");

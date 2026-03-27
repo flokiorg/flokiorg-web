@@ -1,7 +1,7 @@
 import React from "react";
+import { ROUTE_SEO } from "@constants/seo";
 import SeoHead from "@components/common/SeoHead";
 import Donation from "@components/Donation";
-import { ROUTE_SEO } from "@constants/seo";
 import styles from "@styles/scss/DonationPage.module.scss";
 
 const DonationPage = () => {

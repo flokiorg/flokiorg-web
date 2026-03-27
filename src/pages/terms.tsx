@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import SeoHead from "@components/common/SeoHead";
 import { ROUTE_SEO } from "@constants/seo";
+import SeoHead from "@components/common/SeoHead";
 import styles from "@styles/scss/PrivacyPage.module.scss";
 
 const Privacy = () => {

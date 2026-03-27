@@ -18,7 +18,10 @@ const Roadmap = () => {
               {t("roadmap.remainingSubtitle")}
             </div>
           </div>
-          <p className={styles.description} dangerouslySetInnerHTML={{ __html: t("roadmap.intro") }}/>
+          <p
+            className={styles.description}
+            dangerouslySetInnerHTML={{ __html: t("roadmap.intro") }}
+          />
         </div>
 
         <div className={styles.rightColumn}>

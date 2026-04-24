@@ -21,6 +21,11 @@
         "link": "https://x.com/flokicoin_dao"
       },
       {
+        "name": "Telegram",
+        "icon": "/img/telegram.svg",
+        "link": "https://flokicoin.org/telegram"
+      },
+      {
         "name": "Discord",
         "icon": "/img/discord.png",
         "link": "https://flokicoin.org/discord",
@@ -177,6 +182,11 @@
         "button": "选择钱包",
         "links": [
           {
+            "label": "Tap Wallet",
+            "url": "https://docs.flokicoin.org/wallets/tap-wallet/",
+            "tag": "官方"
+          },
+          {
             "label": "tWallet",
             "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
             "tag": "推荐"
@@ -290,6 +300,11 @@
         "link": "https://x.com/flokicoin_dao"
       },
       {
+        "name": "Telegram",
+        "icon": "/img/telegram.svg",
+        "link": "https://flokicoin.org/telegram"
+      },
+      {
         "name": "Discord",
         "icon": "/img/discord.png",
         "link": "https://flokicoin.org/discord"
@@ -400,6 +415,11 @@
             "icon": "/img/x.png",
             "label": "X",
             "link": "https://x.com/flokicoin_dao"
+          },
+          {
+            "icon": "/img/telegram.svg",
+            "label": "Telegram",
+            "link": "https://flokicoin.org/telegram"
           },
           {
             "icon": "/img/discord.png",

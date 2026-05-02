@@ -192,9 +192,8 @@
             "tag": "Lightning Node"
           },
           {
-            "label": "tWallet",
-            "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
-            "tag": "Recommended"
+            "label": "TUI Wallet",
+            "url": "https://docs.flokicoin.org/wallets/twallet/v1#install"
           },
           {
             "label": "flnd",

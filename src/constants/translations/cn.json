@@ -192,9 +192,8 @@
             "tag": "闪电节点"
           },
           {
-            "label": "tWallet",
-            "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
-            "tag": "推荐"
+            "label": "TUI Wallet",
+            "url": "https://docs.flokicoin.org/wallets/twallet/v1#install"
           },
           {
             "label": "flnd",

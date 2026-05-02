@@ -187,9 +187,19 @@
             "tag": "Официальный"
           },
           {
+            "label": "Lokinode",
+            "url": "https://docs.flokicoin.org/wallets/lokinode",
+            "tag": "Lightning-узел"
+          },
+          {
             "label": "tWallet",
             "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
             "tag": "Рекомендуем"
+          },
+          {
+            "label": "flnd",
+            "url": "https://docs.flokicoin.org/wallets/flnd",
+            "tag": "Ops-кошелек"
           },
           {
             "label": "Komodo Wallet",

@@ -187,9 +187,19 @@
             "tag": "Featured"
           },
           {
+            "label": "Lokinode",
+            "url": "https://docs.flokicoin.org/wallets/lokinode",
+            "tag": "Lightning Node"
+          },
+          {
             "label": "tWallet",
             "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
             "tag": "Recommended"
+          },
+          {
+            "label": "flnd",
+            "url": "https://docs.flokicoin.org/wallets/flnd",
+            "tag": "Ops Wallet"
           },
           {
             "label": "Komodo Wallet",

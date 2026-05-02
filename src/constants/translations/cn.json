@@ -187,9 +187,19 @@
             "tag": "官方"
           },
           {
+            "label": "Lokinode",
+            "url": "https://docs.flokicoin.org/wallets/lokinode",
+            "tag": "闪电节点"
+          },
+          {
             "label": "tWallet",
             "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
             "tag": "推荐"
+          },
+          {
+            "label": "flnd",
+            "url": "https://docs.flokicoin.org/wallets/flnd",
+            "tag": "运维钱包"
           },
           {
             "label": "Komodo 钱包",

@@ -49,3 +49,5 @@ commits.sh
 commit.sh
 .agents
 skills-lock.json
+.agents/
+.claude/

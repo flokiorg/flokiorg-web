@@ -16,6 +16,7 @@ release.
 
 - The Tokenization roadmap milestone now lists only **Taproot-Assets**. Runes
   and Ordinals are no longer advertised; tokenization is Lightning-native.
+  (#13)
 
 ## [2026-05]
 

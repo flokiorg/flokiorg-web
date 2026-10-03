@@ -10,6 +10,14 @@ release.
 > the live site serves content from `main` well after that date. Do not deploy
 > from `static` — it would roll the site back about a year.
 
+## [2026-10]
+
+### Changed
+
+- The Tokenization roadmap milestone now lists only **Taproot-Assets**. Runes
+  and Ordinals are no longer advertised; tokenization is Lightning-native.
+  (#13)
+
 ## [2026-05]
 
 ### Changed

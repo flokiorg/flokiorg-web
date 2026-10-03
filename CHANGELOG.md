@@ -1,16 +1,16 @@
 # Changelog
 
-flokicoin.org is served by GitHub Pages from the **`static`** branch, which
-holds the built Next.js export — not from `main`. Pushing `main` therefore
-changes nothing that visitors see; a deploy is a separate step that builds and
-updates `static`. Entries below are grouped by month, newest first, because
-nothing here is versioned by release.
+flokicoin.org is served by **Cloudflare**, which builds from `main`. Entries
+below are grouped by month, newest first, because nothing here is versioned by
+release.
 
-> **The live site is behind `main`.** The `static` tip is dated 2025-05-28,
-> while `main` carries 55 commits made after it. Everything from 2025-08
-> onwards in this file is written and merged but **not yet published**.
+> A `static` branch and a GitHub Pages configuration pointing at it still
+> exist, and that Pages config reports flokicoin.org as its URL. It is a
+> leftover from the previous setup: the `static` tip is dated 2025-05-28, while
+> the live site serves content from `main` well after that date. Do not deploy
+> from `static` — it would roll the site back about a year.
 
-## [2026-05] — not yet deployed
+## [2026-05]
 
 ### Changed
 
@@ -23,13 +23,13 @@ nothing here is versioned by release.
 - **flnd** and **Lokinode** added to the wallets list, with the requested sort
   order and tags.
 
-## [2026-04] — not yet deployed
+## [2026-04]
 
 ### Added
 
 - **Tap Wallet** added to the wallets list, and Telegram to the socials.
 
-## [2026-03] — not yet deployed
+## [2026-03]
 
 ### Added
 
@@ -52,7 +52,7 @@ nothing here is versioned by release.
 - The footer resources link pointed at the wrong path; it now goes to
   `lokihub/resources`.
 
-## [2025-10] — not yet deployed
+## [2025-10]
 
 ### Added
 
@@ -66,7 +66,7 @@ nothing here is versioned by release.
 
 - A broken i18n import.
 
-## [2025-09] — not yet deployed
+## [2025-09]
 
 ### Added
 
@@ -80,7 +80,7 @@ nothing here is versioned by release.
   package manifest tidied.
 - README refreshed.
 
-## [2025-08] — not yet deployed
+## [2025-08]
 
 ### Changed
 
@@ -94,7 +94,7 @@ nothing here is versioned by release.
 
 ### Changed
 
-- Migrated to Next.js. This is the last state that reached the live site.
+- Migrated to Next.js.
 - Milestones updated.
 
 ## [2025-04]

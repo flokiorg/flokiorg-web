@@ -1,0 +1,498 @@
+{
+  "header": {
+    "announcement": {
+      "message": "Lokihub 已上线。您的自托管闪电网络枢纽。",
+      "ctaLabel": "探索 Lokihub",
+      "link": "https://docs.flokicoin.org/lokihub/"
+    },
+    "menu": [
+      { "label": "关于", "link": "#about" },
+      { "label": "里程碑", "link": "#milestones" },
+      { "label": "钱包", "link": "#wallets" },
+      { "label": "浏览器", "link": "#wallets" },
+      { "label": "主题", "link": "#topics" },
+      { "label": "文档", "link": "https://docs.flokicoin.org" },
+      { "label": "常见问题", "link": "#faq" }
+    ],
+    "socials": [
+      {
+        "name": "X",
+        "icon": "/img/x.png",
+        "link": "https://x.com/flokicoin_dao"
+      },
+      {
+        "name": "Telegram",
+        "icon": "/img/telegram.svg",
+        "link": "https://flokicoin.org/telegram"
+      },
+      {
+        "name": "Discord",
+        "icon": "/img/discord.png",
+        "link": "https://flokicoin.org/discord",
+        "width": 21
+      },
+      {
+        "name": "Github",
+        "icon": "/img/github.png",
+        "link": "https://github.com/flokiorg"
+      },
+      {
+        "name": "Nostr",
+        "icon": "/img/nostr.svg",
+        "link": "https://njump.me/nprofile1qqsvj806upqwfsqaza7lar7c2dmj2ey3f8r8p93kags5zvvl3cet3ygnn7h5f"
+      }
+    ],
+    "langs": [
+      { "label": "英语", "value": "en" },
+      { "label": "中文", "value": "cn" },
+      { "label": "俄语", "value": "ru" }
+    ],
+    "donateLabel": "Donate"
+  },
+  "slider": {
+    "title": "Flokicoin 是",
+    "carousel": [
+      "所有权",
+      "零知识证明",
+      "无需许可",
+      "可挖矿",
+      "无需信任",
+      "点对点",
+      "开源",
+      "货币",
+      "去中心化",
+      "安全",
+      "全球化",
+      "快速",
+      "公平",
+      "社区驱动",
+      "自我托管",
+      "透明",
+      "不可阻挡"
+    ],
+    "subtitle": "由 Scrypt 家族驱动的第一层区块链，每个区块都充满乐趣。"
+  },
+  "donation": {
+    "sectionLabel": "捐赠",
+    "title": "支持",
+    "titleHighlight": "趣味网络",
+    "subtitle": "帮助我们构建下一个网络。",
+    "descriptions": [
+      "<a href='https://docs.flokicoin.org/wof' target='_blank'>趣味网络（WoF）</a> 是 Lokichain 的一项大胆倡议，旨在通过创意与实验重新想象互联网，并最终把网络的所有权归还给每个人。",
+      "在你的支持下，我们将赋能建设者与梦想家，推出趣味增强提案（<a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a>），这些充满玩味的原型正在塑造下一代网络。",
+      "每一笔捐赠都将为开源工具、实验与由社区打造的奇妙数字体验提供燃料——不是为逐利，而是为了一个公平的网络。"
+    ],
+    "descriptionList": [
+      "因为未来的网络不应只是去中心化的。",
+      "我们应该夺回所有权。"
+    ],
+    "imageTitle": "下一个网络正在将能量转化为共享价值，并将所有权归还给其源头。",
+    "imageSubtitle": "《趣味网络之书》正在记录这一转变。",
+    "buttonLabel": "立即捐赠",
+    "secondButtonLabel": "WoF 白皮书",
+    "wofpaperUrl": "https://docs.flokicoin.org/wof"
+  },
+  "donationEcosystem": {
+    "sectionLabel": "Ecosystem Donation",
+    "title": "Power the",
+    "titleHighlight": "Flokicoin Ecosystem",
+    "subtitle": "Transparent funding for builders and the community.",
+    "descriptions": [
+      "We are collecting donations dedicated to expanding the Flokicoin ecosystem — supporting protocol upgrades, developer grants, community hubs, and integrations.",
+      "Every action financed with this treasury is recorded in a public sheet that anyone can audit, keeping the entire process transparent from proposal to delivery."
+    ],
+    "descriptionList": [],
+    "imageTitle": "Transparency and accountability keep builders unstoppable.",
+    "imageSubtitle": "Follow every allocation inside the shared treasury sheet.",
+    "buttonLabel": "Donate"
+  },
+  "about": {
+    "subtitle": "关键统计数据和亮点",
+    "cards": [
+      {
+        "image": "/img/ico01.png",
+        "subtitle": "创新的坚实基础",
+        "title": "Lokichain",
+        "description": "Flokicoin 运行在 <a href='https://docs.flokicoin.org/lokichain' target='_blank'>Lokichain</a> 上，这是一条自有区块链，驱动安全、可扩展、去中心化的应用。"
+      },
+      {
+        "image": "/img/ico02.png",
+        "subtitle": "合并挖矿",
+        "title": "Scrypt 家族",
+        "description": "通过加入 Scrypt 家族，Flokicoin 确保了快速、节能的挖矿，同时保持强大的网络安全性。<a href='https://docs.flokicoin.org/mining' target='_blank'>了解更多</a>"
+      },
+      {
+        "image": "/img/ico03.png",
+        "subtitle": "社区驱动",
+        "title": "FIPs",
+        "description": "Flokicoin 通过 <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a>（Flokicoin 改进提案）不断演进，小想法也能带来大转变。"
+      }
+    ]
+  },
+  "roadmap": {
+    "sectionLabel": "里程碑",
+    "subtitle": "社区",
+    "subtitleHighlight": "里程碑",
+    "remainingSubtitle": "成就和未完成的任务.",
+    "intro": "每一个里程碑都体现了协作的力量：它通过我们的沟通渠道塑造，并由 <a href='https://docs.flokicoin.org/lokichain/fips' target='_blank'>FIPs</a>（Flokicoin 改进提案）指引；同时，<a href='https://docs.flokicoin.org/wof/#what-is-a-fep' target='_blank'>FEPs</a>（趣味增强提案）为 WoF 运动开辟新的路径。",
+    "milestones": [
+      {
+        "title": "创世",
+        "label": "[ Floki 已到来 ]"
+      },
+      {
+        "title": "Flokicoin 复兴",
+        "label": "[ Floki 回来了 ]",
+        "description": "区块链从第 19,721 块恢复。"
+      },
+      {
+        "title": "Taproot 激活",
+        "label": "[ 低费用，高隐私 ]",
+        "description": "Taproot 激活，提高了交易效率、可扩展性和隐私性。"
+      },
+      {
+        "title": "Scrypt 家族",
+        "label": "[ 强大的网络安全性 ]",
+        "description": "Flokicoin 将在第 115,840 块加入 Scrypt 家族。"
+      },
+      {
+        "title": "闪电网络",
+        "label": "[ 快速，低成本 ]",
+        "description": "在整个生态系统中实现即时支付和微交易。"
+      },
+      {
+        "title": "代币化",
+        "label": "[ Taproot-Assets ]",
+        "description": "解锁可替代和不可替代资产。"
+      },
+      {
+        "title": "链下计算",
+        "label": "[ OP_CAT，ZKP，Loki-lang ]",
+        "description": "实现零知识证明的链上验证。"
+      }
+    ]
+  },
+  "wallets": {
+    "sectionLabel": "钱包",
+    "title": "存储与监控",
+    "cards": [
+      {
+        "title": "钱包",
+        "description": "通过我们的非托管工具安全地管理资产、节点和网络运营。",
+        "button": "选择钱包",
+        "links": [
+          {
+            "label": "Tap Wallet",
+            "url": "https://docs.flokicoin.org/wallets/tap-wallet/",
+            "tag": "官方"
+          },
+          {
+            "label": "Lokinode",
+            "url": "https://docs.flokicoin.org/wallets/lokinode",
+            "tag": "闪电节点"
+          },
+          {
+            "label": "tWallet",
+            "url": "https://docs.flokicoin.org/wallets/twallet/v1#install",
+            "tag": "TUI 钱包"
+          },
+          {
+            "label": "flnd",
+            "url": "https://docs.flokicoin.org/wallets/flnd",
+            "tag": "运维钱包"
+          },
+          {
+            "label": "Komodo 钱包",
+            "url": "https://app.komodoplatform.com/wallet"
+          }
+        ]
+      },
+      {
+        "title": "区块浏览器",
+        "description": "实时监控网络，全面透明地跟踪两套链上的区块、交易及网络指标。",
+        "button": "选择浏览器",
+        "links": [
+          {
+            "label": "Lokichain 浏览器",
+            "url": "https://lokichain.info"
+          },
+          {
+            "label": "Flokichain 浏览器",
+            "url": "https://flokichain.info"
+          }
+        ]
+      }
+    ]
+  },
+  "lokihub": {
+    "title1": "为 Flokicoin 闪电网络注入全新动力",
+    "title2": "尽在 Lokihub",
+    "tagline": "自托管闪电网络枢纽",
+    "description": "Lokihub 是 Flokicoin 闪电网络的控制中心。管理通道、路由支付和连接应用 —— 无需交出私钥。",
+    "features": [
+      "通过 LSP 获取即时入站和出站流动性",
+      "创建和管理多个子钱包",
+      "开启、关闭和监控闪电通道",
+      "通过 NWC 无缝连接任何应用"
+    ],
+    "button": "探索 Lokihub",
+    "link": "https://docs.flokicoin.org/lokihub/"
+  },
+  "faq": {
+    "sectionTag": "常见问题",
+    "title": "您的问题，我们来解答",
+    "questions": [
+      {
+        "question": "什么是 Flokicoin？",
+        "answer": "Flokicoin 是一个第一层区块链，最初于 2021 年在 Elon Musk 的推文（\"<a href='https://x.com/elonmusk/status/1437179881260032016' target='_blank' rel='noopener noreferrer'>Floki 已到来</a>\"）之后推出。"
+      },
+      {
+        "question": "谁创建了 Flokicoin？",
+        "answer": "Flokicoin 最初由一位匿名开发者推出，在其最初发布后的第 19,721 块后不久，该开发者放弃了该项目。"
+      },
+      {
+        "question": "Flokicoin 的复兴是什么时候发生的？",
+        "answer": "Flokicoin 于 2024 年在第 19,721 块被复兴。我们没有从零开始，而是从原始的 2021 年链继续，保持了历史的完整性。"
+      },
+      {
+        "question": "Flokicoin 的主要特点是什么？",
+        "answer": "• 1 分钟的区块时间<br/>• 支持辅助挖矿<br/>• 每 210,000 块减半<br/>• 初始区块奖励为每块 1000 $FLC，减半直到稳定在 21 $FLC<br/>• 无交易税<br/>• DAO 治理"
+      },
+      {
+        "question": "Flokicoin 使用工作量证明（PoW）挖矿，是否环保？",
+        "answer": "虽然 PoW 挖矿需要能源，但 Flokicoin 通过利用辅助挖矿优化了能源使用。这使参与者可以与其他链一起挖掘 Flokicoin，优化资源使用。"
+      },
+      {
+        "question": "什么是 $LOKI？",
+        "answer": "$LOKI 是 Flokicoin ($FLC) 的最小单位<br/><br/>1 $FLC = 100,000,000 $LOKI"
+      },
+      {
+        "question": "我如何加入 Flokicoin 社区？",
+        "answer": "您可以通过我们的社交媒体渠道和聊天群组加入 Flokicoin 社区。参与治理决策，参与开发讨论，并通过 FEP（Fun Enhancement Possibilities）共同定义乐趣。"
+      },
+      {
+        "question": "作为开发者，我如何为 Flokicoin 做出贡献？",
+        "answer": "作为开发者，您可以通过访问我们的 Git 仓库上的开源代码为 Flokicoin 做出贡献。您可以提交改进，审查代码，并通过 FIP（Flokicoin Improvement Proposals）或社区讨论分享想法。"
+      }
+    ]
+  },
+  "topics": {
+    "sectionTag": "主题",
+    "title": "见解、提示和更新",
+    "cards": [
+      {
+        "title": "Flokicoin (FLC) 挖矿指南",
+        "image": "/img/mine.jpg",
+        "link": "https://docs.flokicoin.org/mining"
+      },
+      {
+        "title": "如何设置您的 Flokicoin 钱包",
+        "image": "/img/secure.jpg",
+        "link": "https://docs.flokicoin.org/wallets/twallet"
+      },
+      {
+        "title": "Flokicoin 的经济和通胀率",
+        "image": "/img/economy.jpg",
+        "link": "https://docs.flokicoin.org/economy"
+      }
+    ]
+  },
+  "contact": {
+    "sectionTag": "与社区联系",
+    "title1": "加入",
+    "title2": "乐趣",
+    "title3": "塑造",
+    "title4": "未来",
+    "socials": [
+      {
+        "name": "X",
+        "icon": "/img/x.png",
+        "link": "https://x.com/flokicoin_dao"
+      },
+      {
+        "name": "Telegram",
+        "icon": "/img/telegram.svg",
+        "link": "https://flokicoin.org/telegram"
+      },
+      {
+        "name": "Discord",
+        "icon": "/img/discord.png",
+        "link": "https://flokicoin.org/discord"
+      },
+      {
+        "name": "GitHub",
+        "icon": "/img/github.png",
+        "link": "https://github.com/flokiorg"
+      },
+      {
+        "name": "Nostr",
+        "icon": "/img/nostr.svg",
+        "link": "https://njump.me/nprofile1qqsvj806upqwfsqaza7lar7c2dmj2ey3f8r8p93kags5zvvl3cet3ygnn7h5f"
+      }
+    ]
+  },
+  "terms": {
+    "title": "使用条款",
+    "sections": [
+      {
+        "title": "1. 接受条款",
+        "subtitle": "通过访问或使用我们的平台，即表示您同意这些条款。",
+        "description": "您使用我们的服务即构成您接受本使用条款。如果您不同意，请勿使用本平台。"
+      },
+      {
+        "title": "2. 使用资格",
+        "subtitle": "您必须符合法律要求。",
+        "description": "您必须年满18岁，并具备签订协议的法律能力，方可使用本平台。您有责任遵守当地法律法规。"
+      },
+      {
+        "title": "3. 钱包责任",
+        "subtitle": "您对钱包安全负全部责任。",
+        "description": "我们不保存或管理私钥。您需自行保管钱包凭证。如您丢失访问权限，我们无法帮助找回。"
+      },
+      {
+        "title": "4. 禁止用途",
+        "subtitle": "严禁任何非法活动。",
+        "description": "不得将平台用于违法、欺诈或有害行为，包括洗钱、资助恐怖主义或违反任何法律法规的行为。"
+      },
+      {
+        "title": "5. 不提供保证",
+        "subtitle": "使用平台需自行承担风险。",
+        "description": "平台按“原样”提供，不保证可用性、准确性或安全性。我们在法律允许的最大范围内不作任何保证。"
+      },
+      {
+        "title": "6. 责任限制",
+        "subtitle": "我们不对任何损失负责。",
+        "description": "因使用平台造成的直接、间接或后果性损失，包括代币、数据或访问权限的丢失，我们概不负责。"
+      },
+      {
+        "title": "7. 条款变更",
+        "subtitle": "我们可能随时更新这些条款。",
+        "description": "我们保留随时修改使用条款的权利。更新内容将在网站发布，继续使用即视为接受修订条款。"
+      },
+      {
+        "title": "8. 管辖法律",
+        "subtitle": "法律适用",
+        "description": "本条款适用并受我们组织运营所在地法律的管辖，除非另有说明。"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "sections": [
+      {
+        "title": "1. 信息收集",
+        "subtitle": "我们收集什么及目的",
+        "description": "我们收集最少的数据，如 IP 地址、浏览器类型和站点使用分析，以维护和改进平台性能。"
+      },
+      {
+        "title": "2. 链上数据",
+        "subtitle": "区块链的透明性",
+        "description": "区块链数据，包括钱包地址和交易记录，是公开的，且不受我们控制。我们不收集或管理链上数据。"
+      },
+      {
+        "title": "3. Cookies 与分析",
+        "subtitle": "我们如何使用 Cookies",
+        "description": "我们使用 Cookies 和第三方分析工具（如 Google Analytics）来了解用户如何与网站互动。您可以在浏览器设置中禁用 Cookies。"
+      },
+      {
+        "title": "4. 第三方服务",
+        "subtitle": "外部工具与集成",
+        "description": "我们可能使用第三方服务来进行通信、托管或数据分析。这些服务将根据它们自己的隐私政策收集信息。"
+      },
+      {
+        "title": "5. 用户权利",
+        "subtitle": "访问与控制",
+        "description": "您可以请求访问或删除您在链外的个人数据。由于链上数据不可更改，因此无法被删除。"
+      },
+      {
+        "title": "6. 数据安全",
+        "subtitle": "保护您的信息",
+        "description": "我们采取合理的技术措施来保护所收集的数据，但无法保证系统绝对安全。"
+      },
+      {
+        "title": "7. 政策更新",
+        "subtitle": "政策变更通知",
+        "description": "我们可能不时修改本隐私政策。更改将发布在本页面，继续使用平台即视为您接受更新后的政策。"
+      }
+    ]
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "<img src=\"/logo.svg\" alt=\"Flokicoin\" style=\"width: 70%; height: auto;\">",
+        "links": [
+          {
+            "icon": "/img/x.png",
+            "label": "X",
+            "link": "https://x.com/flokicoin_dao"
+          },
+          {
+            "icon": "/img/telegram.svg",
+            "label": "Telegram",
+            "link": "https://flokicoin.org/telegram"
+          },
+          {
+            "icon": "/img/discord.png",
+            "label": "Discord",
+            "link": "https://flokicoin.org/discord"
+          },
+          {
+            "icon": "/img/github.png",
+            "label": "GitHub",
+            "link": "https://github.com/flokiorg"
+          },
+          {
+            "icon": "/img/nostr.svg",
+            "label": "Nostr",
+            "link": "https://njump.me/nprofile1qqsvj806upqwfsqaza7lar7c2dmj2ey3f8r8p93kags5zvvl3cet3ygnn7h5f"
+          }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Terms", "link": "/terms" },
+          { "label": "Privacy Notice", "link": "/privacy" }
+        ]
+      },
+      {
+        "title": "学习",
+        "links": [
+          {
+            "label": "Flokicoin 经济",
+            "link": "https://docs.flokicoin.org/economy"
+          },
+          {
+            "label": "挖矿指南",
+            "link": "https://docs.flokicoin.org/mining"
+          },
+          {
+            "label": "钱包指南",
+            "link": "https://docs.flokicoin.org/wallets/twallet"
+          }
+        ]
+      },
+      {
+        "title": "使用",
+        "links": [
+          { "label": "运行节点", "link": "https://docs.flokicoin.org/lokichain#run-a-node" },
+          { "label": "API 参考", "link": "https://flokichain.info/docs/api/rest" },
+          { "label": "运行运营者", "link": "https://docs.flokicoin.org/lokichain#run-a-node" }
+        ]
+      },
+      { 
+        "title": "社区", 
+        "links": [ 
+          { "label": "资产", "link": "/assets" },
+          { "label": "资源", "link": "https://docs.flokicoin.org/lokihub/resources" }
+
+        ] }
+    ]
+  }
+  ,
+  "assets": {
+    "title": "素材",
+    "download": "下载",
+    "open": "打开"
+  }
+}

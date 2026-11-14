@@ -1,0 +1,285 @@
+// Donations.module.scss (optimisé)
+
+$bg: #1d1d1d;
+$text: #fff;
+$muted: #d9d9d9;
+$muted2: #b0b0b0;
+$accent: #d0970f;
+$border: #363636;
+$btn-bg: rgba(182, 64, 245, 0.15);
+$btn-border: #b744f6db;
+
+.donationSection {
+  background-color: $bg;
+  color: $text;
+  padding: 60px 0;
+  scroll-margin-top: calc(120px + var(--announcement-height, 0px));
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: clip; // évite tout scroll horizontal
+  }
+
+  .leftColumn {
+    max-width: 100%;
+    flex: 1 1 60%;
+    padding-right: 30px;
+    margin-bottom: 40px;
+    min-width: 280px;
+
+    .headerBox {
+      width: 100%;
+
+      .label {
+        display: inline-block;
+        color: $muted;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 10px 20px;
+        border: 1px solid $border;
+        border-radius: 30px;
+        white-space: nowrap;
+      }
+
+      .title {
+        padding: 20px 0 10px 0;
+        color: $text;
+        font-size: 38px;
+        font-weight: 200;
+        opacity: 0.8;
+
+        span {
+          color: $accent;
+        }
+      }
+
+      .subtitle {
+        display: block;
+        letter-spacing: 1px;
+        font-size: 16px;
+        color: $muted2;
+        margin-bottom: 30px;
+      }
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+
+    .descriptions {
+      .description {
+        opacity: 0.8;
+        line-height: 1.8;
+        color: $text;
+
+        & + .description {
+          margin-top: 14px;
+        }
+
+        // sécurité pour mots/URLs très longs
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+    }
+
+    .descriptionList {
+      margin-top: 16px;
+      list-style: none;
+      color: $muted2;
+      opacity: 0.8;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+
+        .bulletPoint {
+          margin-right: 5px;
+          opacity: 0.8;
+          font-size: 1.2em;
+          color: $accent;
+        }
+      }
+    }
+
+    .buttonWrapper {
+      margin-top: 20px;
+
+      .sectionButton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        text-decoration: none;
+        color: $text;
+        background: $btn-bg;
+        border: 1px solid $btn-border;
+        border-radius: 30px;
+        padding: 12px 25px;
+        // Fluid, responsive label size: smaller on mobile, not small on desktop
+        font-size: clamp(14px, 2vw, 16px);
+        white-space: nowrap; // keep label on one line
+        font-weight: bold;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        will-change: transform;
+
+        &:hover {
+          background: #c1d0970f;
+        }
+        &:active {
+          transform: translateY(1px);
+        }
+        &:focus-visible {
+          outline: 2px solid $btn-border;
+          outline-offset: 2px;
+        }
+      }
+
+      .secondButton {
+        background-color: #d0970f;
+        border-color: #d0970f;
+        margin-right:10px;
+
+        &:hover {
+          background: #c1d0970f;
+        }
+      }
+    }
+  }
+
+  .rightColumn {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 260px;
+
+    .imageWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+
+      .image {
+        display: block;
+        width: 100%;
+        max-width: 300px; // limite visuelle
+        height: auto;
+        border-radius: 11px;
+      }
+
+      .imageTitle,
+      .imageSubtitle {
+        margin-top: 10px;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 8px; // évite de coller aux bords en mobile
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+
+      .imageTitle {
+        color: $muted2;
+        font-size: 1.1em;
+        font-style: italic;
+        quotes: "“" "”";
+
+        &:before {
+          content: open-quote;
+          opacity: 0.8;
+          margin-right: 5px;
+          font-weight: bold;
+          font-size: 1.2em;
+          color: $accent;
+        }
+        &:after {
+          content: close-quote;
+          font-weight: bold;
+          opacity: 0.8;
+          margin-left: 5px;
+          font-size: 1.2em;
+          color: $accent;
+        }
+      }
+
+      .imageSubtitle {
+        color: #777;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  // Responsif
+  @media screen and (max-width: 1100px) {
+    .leftColumn .headerBox .title {
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .leftColumn,
+    .rightColumn {
+      flex: 1 1 100%;
+      padding: 0;
+      min-width: 0; // important pour éviter les overflows flex
+    }
+
+    .leftColumn {
+      position: static;
+      margin-bottom: 40px;
+
+      .headerBox {
+        text-align: center;
+      }
+
+      .title {
+        font-size: 28px;
+        text-align: center;
+
+        span {
+          display: block;
+        }
+      }
+
+      .subtitle {
+        text-align: center;
+      }
+
+      .buttonWrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; // allow wrapping to next line when needed
+        gap: 8px; // consistent spacing between buttons/rows
+
+        .sectionButton {
+          padding: 10px 16px; // tighter padding on small screens
+        }
+        .secondButton {
+          margin-right: 0; // rely on gap for spacing; better when wrapping
+        }
+      }
+    }
+
+    .rightColumn {
+      .imageWrapper {
+        .image {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+# ------------------------------------
+# 📦 Node / Yarn
+# ------------------------------------
+node_modules/
+.yarn/
+.next
+.wrangler
+
+# ------------------------------------
+# 🛠️ Build output
+# ------------------------------------
+build/
+dist/
+out/
+.vite/
+tsconfig.tsbuildinfo
+
+# ------------------------------------
+# 🧪 Env files
+# ------------------------------------
+.env
+.env.*.local
+
+# ------------------------------------
+# 🧠 IDEs / Tools
+# ------------------------------------
+.idea/
+#.vscode/
+*.swp
+*.swo
+
+# ------------------------------------
+# 🪵 Logs / System
+# ------------------------------------
+.DS_Store
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------
+# 🧪 Test output
+# ------------------------------------
+coverage/
+jest-html-reporters-*.html
+
+# Local helper scripts
+commits.sh
+commit.sh
+.agents
+skills-lock.json
+.agents/
+.claude/

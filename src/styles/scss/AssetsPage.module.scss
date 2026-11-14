@@ -1,0 +1,196 @@
+.assetsSection {
+  background: #000;
+  padding: 60px 0;
+  scroll-margin-top: calc(120px + var(--announcement-height, 0px));
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.pageTitle {
+  color: #fff;
+  font-weight: 500;
+  opacity: 0.8;
+  margin: 0 0 24px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: #0c0c0c;
+  border: 1px solid #2b2b2b;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px 0 18px;
+}
+
+.title {
+  color: #d0970f;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.badge {
+  border: 1px solid #2b2b2b;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 4px 10px;
+}
+
+.size {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.preview {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.previewBox {
+  margin: 10px 18px 0 18px;
+  border-radius: 8px;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+.previewLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.previewPlaceholder {
+  color: #fff;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 12px 18px 16px 18px;
+  margin-top: auto; // pins buttons to the bottom consistently
+}
+
+.downloadBtn,
+.openBtn {
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 5px 11px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.downloadBtn:hover,
+.openBtn:hover {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.downloadBtn {
+  background-color: #d0970f;
+  border-color: #d0970f;
+  color: #000;
+  font-weight: 600;
+}
+
+.downloadBtn:hover {
+  background: #c1d0970f;
+  color: #fff;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.span3 {
+  grid-column: span 3;
+}
+
+.span6 {
+  grid-column: span 6;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .span6 { grid-column: span 3; }
+  .span3 { grid-column: span 3; }
+  .span2 { grid-column: span 1; }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .span6, .span3, .span2 { grid-column: span 1; }
+  .previewBox { min-height: 150px; }
+}
+
+/* Fixed preview heights per shape to keep rows tidy */
+.shapeFull .previewBox { height: 220px; }
+.shapeRect .previewBox { height: 200px; }
+.shapeSquare .previewBox { height: 180px; }
+
+@media screen and (max-width: 600px) {
+  .shapeFull .previewBox { height: 170px; }
+  .shapeRect .previewBox { height: 160px; }
+  .shapeSquare .previewBox { height: 150px; }
+}
+.main {
+  height: 100%;
+  width: 100%;
+
+  .containerBoxed {
+    height: 100%;
+    align-items: center;
+    padding-top: calc(80px + var(--announcement-height, 0px));
+  }
+}

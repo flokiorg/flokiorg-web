@@ -1,0 +1,235 @@
+.walletsSection {
+  background: #000;
+  padding: 60px 0;
+  scroll-margin-top: calc(120px + var(--announcement-height, 0px));
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionBadge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(208, 151, 15, 0.1);
+  color: #d0970f;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+
+  @media screen and (max-width: 900px) {
+    font-size: 36px;
+  }
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cardWrapper {
+  width: calc(50% - 25px);
+  border-radius: 11px;
+  position: relative;
+  background-color: #0c0c0c;
+  overflow: visible;
+  z-index: 1;
+}
+
+.cardWrapperActive {
+  z-index: 10;
+}
+
+.card {
+  padding: 36px;
+  border-radius: 11px;
+  background-color: #0c0c0c;
+  border: 1px solid #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardHeader {
+  margin-bottom: 24px;
+}
+
+.cardTitle {
+  font-size: 36px;
+  font-weight: 500;
+  color: #d0970f;
+  margin-bottom: 12px;
+}
+
+.cardButton {
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.7s ease;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.cardDescription {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 300;
+  color: #ccc;
+  margin: 0;
+  flex: 1;
+}
+
+.cardActions {
+  margin-top: auto; // Push to bottom
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 100%;
+  white-space: nowrap;
+  background: #151515;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdownItem {
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #2a2a2a;
+    color: #d0970f;
+  }
+  
+  &:not(:last-child) {
+    border-bottom: 1px solid #2b2b2b;
+  }
+}
+
+.dropdownTag {
+  margin-left: 8px;
+  padding: 2px 8px;
+  background: rgba(208, 151, 15, 0.15);
+  color: #d0970f;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+// Responsive
+@media screen and (max-width: 900px) {
+  .cardWrapper {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .cardHeader {
+    align-items: flex-start;
+    min-width: auto;
+  }
+
+
+
+  .cardButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}

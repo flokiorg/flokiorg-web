@@ -10,6 +10,21 @@ release.
 > the live site serves content from `main` well after that date. Do not deploy
 > from `static` — it would roll the site back about a year.
 
+## [v2026.11.15]
+
+The first release cut from a tag.
+
+### Added
+
+- A container build (`Dockerfile`, `Caddyfile`): the static site served by Caddy
+  on :8080 for any host, from digest-pinned bases.
+
+### Changed
+
+- Releases are now cut on org-flokicoin's grasp: a `vYYYY.MM.DD` heading
+  here, then a tag of the same name on its merge commit. chabka-flokicoin
+  builds and deploys the tag. Cloudflare still builds `main` until the cutover.
+
 ## [2026-10]
 
 ### Changed

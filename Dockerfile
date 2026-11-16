@@ -6,6 +6,11 @@ RUN corepack enable
 COPY package.json yarn.lock .yarnrc.yml ./
 RUN yarn install --immutable
 COPY . .
+# Donation links, inlined at build time. Unset, their buttons are hidden.
+ARG NEXT_PUBLIC_DONATION_WOF_URL=""
+ARG NEXT_PUBLIC_DONATION_ECOSYSTEM_URL=""
+ENV NEXT_PUBLIC_DONATION_WOF_URL=$NEXT_PUBLIC_DONATION_WOF_URL \
+    NEXT_PUBLIC_DONATION_ECOSYSTEM_URL=$NEXT_PUBLIC_DONATION_ECOSYSTEM_URL
 RUN yarn build
 
 FROM caddy:2-alpine@sha256:003a97808e781aa9f7e75cc2f43d34d461099031faf5e20faefb9f61126836f0

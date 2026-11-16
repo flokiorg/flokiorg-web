@@ -10,6 +10,15 @@ release.
 > the live site serves content from `main` well after that date. Do not deploy
 > from `static` — it would roll the site back about a year.
 
+## [v2026.11.16]
+
+### Fixed
+
+- The container build no longer fails when `NEXT_PUBLIC_DONATION_WOF_URL` or
+  `NEXT_PUBLIC_DONATION_ECOSYSTEM_URL` is unset (v2026.11.15 failed on it while
+  prerendering `/donate`). An unset URL hides its donate button. Both can be
+  passed as build args.
+
 ## [v2026.11.15]
 
 The first release cut from a tag.

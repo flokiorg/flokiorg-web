@@ -10,6 +10,12 @@ release.
 > the live site serves content from `main` well after that date. Do not deploy
 > from `static` — it would roll the site back about a year.
 
+## [v2026.11.17]
+
+The same code as v2026.11.16, released again: v2026.11.16's build never ran
+(its pod couldn't mount its source volume), and a failed version isn't built
+again.
+
 ## [v2026.11.16]
 
 ### Fixed

@@ -4,14 +4,15 @@ export const throwErrorIfEnvVarsNotFound = () => {
     process.env.NEXT_PUBLIC_DONATION_ECOSYSTEM_URL,
   );
 
+  // An unset donation URL hides its button; it no longer fails the build.
   if (!hasWofDonation) {
-    throw new Error(
+    console.warn(
       "NEXT_PUBLIC_DONATION_WOF_URL not set in environment variables",
     );
   }
 
   if (!hasEcosystemDonation) {
-    throw new Error(
+    console.warn(
       "NEXT_PUBLIC_DONATION_ECOSYSTEM_URL not set in environment variables",
     );
   }

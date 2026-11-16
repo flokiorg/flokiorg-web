@@ -108,7 +108,7 @@ const Donation: React.FC<DonationProps> = ({ variant = "default" }) => {
               </a>
             )}
 
-            {primaryButtonLabel && (
+            {primaryButtonLabel && primaryButtonUrl && (
               <a
                 href={primaryButtonUrl}
                 target="_blank"

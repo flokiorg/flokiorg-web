@@ -1,5 +1,5 @@
 // Cloudflare Worker for flokicoin.org and www: static assets only, no server code.
-// Cloudflare builds it from GitHub main (`yarn build` → out/). Routes, names
+// A release Worker, built from a release tag (`yarn build` → out/). Routes, names
 // and secrets live in org-flokicoin deploy/flokiorg-web/cloudflare.yaml, not here.
 {
   "name": "flokiorg-web",

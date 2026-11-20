@@ -4,6 +4,10 @@
 }
 
 :8080 {
+	# Cloudflare sets X-Forwarded-Proto to the visitor's scheme: send plain http to https.
+	@http header X-Forwarded-Proto http
+	redir @http https://{host}{http.request.orig_uri} 308
+
 	root * /srv
 	encode gzip
 	try_files {path} {path}.html {path}/index.html

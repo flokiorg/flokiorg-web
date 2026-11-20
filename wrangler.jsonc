@@ -1,0 +1,14 @@
+// Cloudflare Worker for flokicoin.org and www: static assets only, no server code.
+// Cloudflare builds it from GitHub main (`yarn build` → out/). Routes, names
+// and secrets live in org-flokicoin deploy/flokiorg-web/cloudflare.yaml, not here.
+{
+  "name": "flokiorg-web",
+  "compatibility_date": "2026-11-20",
+  "assets": {
+    "directory": "./out",
+    // next export writes /x.html and /x/index.html; serve both like the
+    // Caddyfile's try_files, and 404.html for a missing path.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

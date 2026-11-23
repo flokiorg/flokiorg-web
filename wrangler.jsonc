@@ -1,8 +1,9 @@
 // Cloudflare Worker for flokicoin.org and www: static assets only, no server code.
 // A release Worker, built from a release tag (`yarn build` → out/). Routes, names
-// and secrets live in org-flokicoin deploy/flokiorg-web/cloudflare.yaml, not here.
+// and secrets live in the deploys area's flokiorg-web/cloudflare.yaml, not here.
 {
   "name": "flokiorg-web",
+  "main": "index.js",
   "compatibility_date": "2026-11-20",
   "assets": {
     "directory": "./out",

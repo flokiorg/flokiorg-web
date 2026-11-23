@@ -13,7 +13,9 @@ ENV NEXT_PUBLIC_DONATION_WOF_URL=$NEXT_PUBLIC_DONATION_WOF_URL \
     NEXT_PUBLIC_DONATION_ECOSYSTEM_URL=$NEXT_PUBLIC_DONATION_ECOSYSTEM_URL
 RUN yarn build
 
-FROM caddy:2-alpine@sha256:003a97808e781aa9f7e75cc2f43d34d461099031faf5e20faefb9f61126836f0
+FROM caddy:2-alpine@sha256:003a97808e781aa9f7e75cc2f43d34d461099031faf5e20faefb9f61126836f0 AS caddy
 COPY Caddyfile /etc/caddy/Caddyfile
-COPY --from=build /app/out /srv
+COPY --from=build /app/out /var/site
+# The Worker's entry: the Worker release takes it from this stage too (one build).
+COPY index.js /var/index.js
 EXPOSE 8080

@@ -8,7 +8,7 @@
 	@http header X-Forwarded-Proto http
 	redir @http https://{host}{http.request.orig_uri} 308
 
-	root * /srv
+	root * /var/site
 	encode gzip
 	try_files {path} {path}.html {path}/index.html
 	file_server

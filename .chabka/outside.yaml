@@ -1,0 +1,7 @@
+# The flokicoin.org Worker's release: chabka-flokicoin builds this tar from each tag,
+# beside the image, and puts its sha256 in the release PR on flokiorg-web's cloudflare.yaml.
+worker:
+  target: caddy            # the image's own stage, so the tag runs one Next.js build
+  dir: /var                # where that stage holds index.js and site/
+  modules: [index.js]      # the Worker's entry (main_module in cloudflare.yaml)
+  assets: site             # the static export, served by the ASSETS binding
